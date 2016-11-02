@@ -1,10 +1,4 @@
-permalink: /:categories/:year/:month/:day/:title
-
-exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md"]
-
-highlighter: rouge
-
-title : Test Title
+title : HTTPS Watch
 
 author :
   name : Anand Bhat
@@ -25,6 +19,7 @@ JB :
   tags_path : nil
   atom_path : nil
   rss_path : nil
+  ASSET_PATH : https://anand-bhat.github.io/test/assets
   comments :
     provider : false
   analytics :
