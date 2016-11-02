@@ -15,7 +15,7 @@ JB :
   tags_path : nil
   atom_path : nil
   rss_path : nil
-  ASSET_PATH : ./assets1
+  ASSET_PATH : ./assets
   comments :
     provider : false
   analytics :
