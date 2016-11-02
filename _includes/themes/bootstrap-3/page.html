@@ -1,16 +1,13 @@
 <div class="page-header">
-  <h1>{{ page.title }} {% if page.custom_category %} <small>{{ page.custom_category }}</small>{% endif %}</h1>
+	<h1>{{ page.title }} {% if page.tagline %} - {{ page.tagline }}{% endif %}</h1>
 </div>
-
-<div class="row">
-  <div class="col-xs-12">
-	This page provides details of HTTPS usage for websites operated by {{ page.custom_category }}. If they support HTTPS (and they should!), this page lists their grades from <a target="_blank" href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs' SSL Server Test</a>.
-	Issues that prevent the site from obtaining an A grade are also listed.
-	</div>
-	<br>
-	<div>
-		<b>Toggle shown/ <span class="strikethrough">hidden</span> columns:</b> <a id="toggleColumns" href="#">[show section]</a>
-		<div id="toggleColumnsSection" class="collapse">
+<div>
+	This page provides details of HTTPS usage for websites operated by {{ page.custom_category }}. If they support HTTPS (and they should!), this page lists their grades from <a target="_blank" href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs Server Test</a>. Issues that prevent the site from obtaining an A grade are also listed.
+</div>
+<br>
+<div>
+	<b>Toggle shown/ <span class="strikethrough">hidden</span> columns:</b> <a id="toggleColumns" href="#">[show section]</a>
+	<div id="toggleColumnsSection" class="collapse">
 		<ul>
 			<li>Site overview and test details:
 				<a class="toggle-column strikethrough" data-column="5" href="#">Test Date</a> -
@@ -59,57 +56,53 @@
 				<a class="toggle-column" data-column="33" href="#">Lacks Secure Renegotiation</a>
 			</li>
 		</ul>
-		</div>
 	</div>
+</div>
+<div>
+	<table id="httpsdata" class="display cell-border">
+		<tfoot>
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+<hr>
+<footer>
 	<div>
-		<table id="httpsdata" class="display cell-border">
-			<tfoot>
-				<tr>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-			</tfoot>
-		</table>
+		This site was inspired by <a target="_blank" href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs Server Test</a> and <a target="_blank" href="https://pulse.cio.gov/https/domains/">HTTPS in the [U.S.] federal government</a>. Contribute, report issues and fork this via <a target="_blank" href="https://github.com/anand-bhat/httpswatch"><svg height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>GitHub</a>
 	</div>
-	<br>
-	<hr>
-	<footer>
-	<div>
-		This site was inspired by <a target="_blank" href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs' SSL Server Test</a> and <a target="_blank" href="https://pulse.cio.gov/https/domains/">HTTPS in the [U.S.] federal government</a>. Contribute, report issues and fork this via <a target="_blank" href="https://github.com/anand-bhat/httpswatch">
-      <svg height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>GitHub
-</a>
-	</div>
-	</div>
-	</footer>
+</footer>
