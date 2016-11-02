@@ -1,5 +1,5 @@
 <div>
-	<h1>{{ page.title }} {% if page.tagline %} - {{ page.tagline }}{% endif %}</h1>
+	<h1><a href="{{ BASE_PATH }}">{{ page.title }}</a> {% if page.tagline %} - {{ page.tagline }}{% endif %}</h1>
 </div>
 <div>
 	This page provides details of HTTPS usage for websites operated by {{ page.custom_category }}. If they support HTTPS (and they should!), this page lists their grades from <a target="_blank" href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs Server Test</a>. Issues that prevent the site from obtaining an A grade are also listed.
