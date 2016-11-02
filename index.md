@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: blank
 title: HTTPS Watch
 ---
 Blah
