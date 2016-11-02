@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Pages 
-header: Pages
-group: navigation
+title: HTTPS Watch - All pages
+custom_category: All pages
+custom_category_min: All pages
 ---
-{% include JB/setup %}
-
 <h2>All Pages</h2>
 <ul>
 {% assign pages_list = site.pages %}
