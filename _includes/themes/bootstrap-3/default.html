@@ -25,56 +25,120 @@
 </head>
 
 <body>
-    <div id="wrap">
-      <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="jb-navbar-collapse">
-          <ul class="nav navbar-nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
-          <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-        </div><!-- /.navbar-collapse -->
-      </nav>
-
-      <div class="container">
-        {{ content }}
-      </div>
-
-    </div>
-
-    <div id="footer">
-      <div class="container">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
-        </p>
-      </div>
-    </div>
-
-    {% include JB/analytics %}
-
-
-    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+	<h1>HTTPS Watch - Indian Pharmacies - Detailed Stats</h1>
+	<div>
+	This page provides details of HTTPS usage for websites operated by Indian Pharmacies. If they support HTTPS (and they should!), this page lists their grades from <a href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs' SSL Server Test</a>.
+	Issues that prevent the site from obtaining an A grade are also listed. Although the best possible grade is A+, issues preventing sites from getting to an A+ from an A are not listed as there are too few sites who are at an A.
+	<br><br>
+	You can also see <a href="./overviewIndianBanks.html">the overview</a> and <a href="./basicIndianBanks.html">just a list of sites and their grades</a>.
+	</div>
+	<br>
+	<div>
+		<b>Toggle shown/ <span class="strikethrough">hidden</span> columns:</b> <a id="toggleColumns" href="#">[show section]</a>
+		<div id="toggleColumnsSection" class="collapse">
+		<ul>
+			<li>Site overview and test details:
+				<a class="toggle-column strikethrough" data-column="5" href="#">Test Date</a> -
+				<a class="toggle-column strikethrough" data-column="6" href="#">Status Message</a> -
+				<a class="toggle-column strikethrough" data-column="7" href="#">Industry</a> -
+				<a class="toggle-column strikethrough" data-column="8" href="#">Host Purpose</a> -
+				<a class="toggle-column strikethrough" data-column="9" href="#">HTTPS Behavior</a> -
+				<a class="toggle-column strikethrough" data-column="10" href="#">Issue Report</a>
+			</li>
+			<li>
+				Issues capping grade to F:
+				<a class="toggle-column" data-column="11" href="#">Vulnerable to Heartbleed</a> -
+				<a class="toggle-column" data-column="12" href="#">Vulnerable to CVE-2014-0224</a> -
+				<a class="toggle-column" data-column="13" href="#">Vulnerable to CVE-2016-2107</a> -
+				<a class="toggle-column" data-column="14" href="#">Vulnerable to FREAK</a> -
+				<a class="toggle-column" data-column="15" href="#">Vulnerable to Logjam</a> -
+				<a class="toggle-column" data-column="16" href="#">Vulnerable to POODLE (TLS)</a> -
+				<a class="toggle-column" data-column="17" href="#">Vulnerable to DROWN</a> -
+				<a class="toggle-column" data-column="18" href="#">Supports SSLv2</a> -
+				<a class="toggle-column" data-column="19" href="#">Supports Anonymous suites</a> -
+				<a class="toggle-column" data-column="20" href="#">Only supports RC4 suites</a> -
+				<a class="toggle-column" data-column="21" href="#">Supports Insecure renegotiation</a> -
+				<a class="toggle-column" data-column="22" href="#">No support for TLS</a>
+			</li>
+			<li>
+				Issues capping grade to T:
+				<a class="toggle-column" data-column="23" href="#">Untrusted certificate</a>
+			</li>
+			<li>
+				Issues capping grade to C:
+				<a class="toggle-column" data-column="24" href="#">Vulnerable to POODLE (SSLv3)</a> -
+				<a class="toggle-column" data-column="25" href="#">Lacks support for TLSv1.2</a> -
+				<a class="toggle-column" data-column="26" href="#">Uses RC4 with modern protocols</a>
+			</li>
+			<li>
+				Issues capping grade to B:
+				<a class="toggle-column" data-column="27" href="#">Supports RC4</a> -
+				<a class="toggle-column" data-column="28" href="#">Supports SSLv3</a> -
+				<a class="toggle-column" data-column="29" href="#">Uses weak DH</a> -
+				<a class="toggle-column" data-column="30" href="#">Has incomplete chain</a> -
+				<a class="toggle-column" data-column="31" href="#">Has weak private key</a>
+			</li>
+			<li>
+				Issues capping grade to A-:
+				<a class="toggle-column" data-column="32" href="#">Lacks Forward Secrecy</a>
+				<a class="toggle-column" data-column="33" href="#">Lacks Secure Renegotiation</a>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div>
+		<table id="httpsdata" class="display cell-border">
+			<tfoot>
+				<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<br>
+	<hr>
+	<footer>
+	<div>
+		This site was inspired by <a target="_blank" href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs' SSL Server Test</a> and <a target="_blank" href="https://pulse.cio.gov/https/domains/">HTTPS in the [U.S.] federal government</a>.
+		<br><br>
+		Contribute, report issues and fork this via <a target="_blank" href="https://github.com/anand-bhat/httpswatch">
+      <svg height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>GitHub
+</a>
+	</div>
+	</footer>
+</body>
 </body>
 </html>
