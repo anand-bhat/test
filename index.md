@@ -3,7 +3,7 @@ layout: blank
 title: HTTPS Watch
 ---
 <div>
-	<h1>{{ site.title }} {% if page.tagline %} - {{ page.tagline }}{% endif %}</h1>
+	<h2>{{ site.title }}</h2>
 </div>
 <hr>
 <div>
