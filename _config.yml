@@ -5,9 +5,9 @@ author :
   github : anand-bhat
   twitter : _anandbhat
 
-production_url : https://anand-bhat.github.io/test
+production_url : https://anand-bhat.github.io/test/
 
 JB :
   version : 0.3.0
-  BASE_PATH : https://anand-bhat.github.io/test
-  ASSET_PATH : https://anand-bhat.github.io/test/assets
+  BASE_PATH : https://anand-bhat.github.io/test/
+  ASSET_PATH : https://anand-bhat.github.io/test/assets/
