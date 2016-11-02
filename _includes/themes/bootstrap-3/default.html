@@ -4,8 +4,6 @@
     <meta charset="utf-8">
 
     <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,6 +25,7 @@
 <body>
 	<h1>HTTPS Watch - Indian Pharmacies - Detailed Stats</h1>
 	<div>
+	{{ page.content }}
 	This page provides details of HTTPS usage for websites operated by Indian Pharmacies. If they support HTTPS (and they should!), this page lists their grades from <a href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs' SSL Server Test</a>.
 	Issues that prevent the site from obtaining an A grade are also listed. Although the best possible grade is A+, issues preventing sites from getting to an A+ from an A are not listed as there are too few sites who are at an A.
 	<br><br>

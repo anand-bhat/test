@@ -2,14 +2,10 @@ title : HTTPS Watch
 
 author :
   name : Anand Bhat
-  email : anandbhat2509@gmail.com
   github : anand-bhat
   twitter : _anandbhat
-  feedburner : nil
 
 production_url : https://anand-bhat.github.io/test
-
-markdown: kramdown
 
 JB :
   version : 0.3.0
@@ -19,7 +15,7 @@ JB :
   tags_path : nil
   atom_path : nil
   rss_path : nil
-  ASSET_PATH : https://anand-bhat.github.io/test/assets
+  ASSET_PATH : ./assets1
   comments :
     provider : false
   analytics :
