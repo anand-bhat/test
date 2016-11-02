@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 
-    <title>{{ page.title }} {% if page.tagline %} - {{ page.tagline }}{% endif %}</title>
+	<title>{{ page.title }} {% if page.tagline %} - {{ page.tagline }}{% endif %}</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.datatables.net https://cdnjs.cloudflare.com/ajax/libs/jquery/ https://cdnjs.cloudflare.com/ajax/libs/datatables/; style-src 'self' https://cdn.datatables.net https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/ https://cdnjs.cloudflare.com/ajax/libs/datatables/; img-src 'self' https://cdnjs.cloudflare.com/ajax/libs/datatables/; font-src 'self' https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/; form-action 'none'; block-all-mixed-content; reflected-xss block;">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,8 +18,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s= sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww==" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js" integrity="sha256-TX6POJQ2u5/aJmHTJ/XUL5vWCbuOw0AQdgUEzk4vYMc= sha384-89aj/hOsfOyfD0Ll+7f2dobA15hDyiNb8m1dJ+rJuqgrGR+PVqNU8pybx4pbF3Cc sha512-JSdvzvKEAXKggB5Zoh4JTEKon1nRt6JXJE3bEEtYUyqfBZCFWMcYWyaoJraRIPmj9C7C9IXbwLuXK/jJ3ztitQ==" crossorigin="anonymous"></script>
 	<script src="https://cdn.datatables.net/fixedheader/3.1.2/js/dataTables.fixedHeader.min.js" integrity="sha256-tfibYiF10XJKFcXJTmm2S8pHwdcCSnC3nV0tyu262CY= sha384-McNNqs4QPnl7yrdc/xx7b1z6m7qw97kz61X1li5yNChyv9cIhPLh24nB49YRVHZH sha512-+GZSIh9vN5V12Em640ZY6I14cXpmG0lKKHGNn25VLK+uNHNlvSc8RdDYEOUb8k/PPxnqC+3epixzGQAgdyL8Dw==" crossorigin="anonymous"></script>
+	{% if page.custom_category_min %}
 	<script src="{{ ASSET_PATH }}/data/dataSet{{ page.custom_category_min }}.js"></script>
-	<script src="{{ ASSET_PATH }}/scripts/custom.js"></script>
+	<script src="{{ ASSET_PATH }}/scripts/custom.js"></script>{% endif %}
 </head>
 
 <body>
