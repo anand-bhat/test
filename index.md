@@ -13,7 +13,7 @@ title: HTTPS Watch
 <div>
 <hr>
 <div>
-	<h4>Categories:</h3>
+	<h4>Categories:</h4>
 	<ul>
 		<li><a href="./pages/indianPharmacies">Indian Pharmacies</a> - Online pharmacies in India</li>
 		<li><a href="./pages/indianIncomeTaxFilingServices">Indian Income Tax Filing Services</a> - Income Tax Filing Services in India</li>
