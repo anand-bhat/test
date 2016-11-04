@@ -18,6 +18,7 @@ title: HTTPS Watch
 		<li><a href="./pages/indianPharmacies">Indian Pharmacies</a> - Online pharmacies in India</li>
 		<li><a href="./pages/indianIncomeTaxFilingServices">Indian Income Tax Filing Services</a> - Income Tax Filing Services in India</li>
 	</ul>
+	<h4>Specific domains, services or companies:</h4>These will roll up to a category at some point.
 	<ul>
 		<li><a href="./pages/practo">Practo</a> - Healthcare (Global)</li>
 		<li><a href="./pages/mediAssistIndia">Medi Assist India</a> - India's largest Healthcare TPA</li>
