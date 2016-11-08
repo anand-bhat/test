@@ -1,7 +1,5 @@
 title : HTTPS Watch
 
-exclude: ["samples"]
-
 author :
   name : Anand Bhat
   github : anand-bhat
