@@ -47,6 +47,6 @@ title: HTTPS Watch
 	<h5>Miscellaneous:</h5>
 	<ul>
 		<li><a href="./reports/freelancer">Freelancer</a> - Freelancer is a global crowdsourcing marketplace website, which allows potential employers to post jobs that freelancers can then bid to complete</li>
-		<li><a href="./reports/spacex">SpaceX</a> - SpaceX is an American aerospace manufacturer and space transport services company</li>
+		<li><a href="./reports/spaceX">SpaceX</a> - SpaceX is an American aerospace manufacturer and space transport services company</li>
 	</ul>
 </div>
