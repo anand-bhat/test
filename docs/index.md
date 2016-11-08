@@ -25,7 +25,7 @@ title: HTTPS Watch
 		<li><a href="./reports/bankOfIreland">Bank of Ireland</a> - The Bank of Ireland is a commercial bank operation in Ireland and one of the traditional 'Big Four' Irish banks.</li>
 		<li><a href="./reports/danskeBank">Danske Bank</a> - Danske Bank is the largest bank in Denmark and a major retail bank in the northern European region with over 5 million retail customers.</li>
 		<li><a href="./reports/nsdl">NSDL</a> - National Securities Depository Limited (NSDL) is the largest securities depository in India</li>
-		<li><a href="./reports/paypal">Paypal</a> - PayPal Holdings, Inc. is an American company operating a worldwide online payments system</li>
+		<li><a href="./reports/payPal">PayPal</a> - PayPal Holdings, Inc. is an American company operating a worldwide online payments system</li>
 		<li><a href="./reports/rabobank">Rabobank</a> - Rabobank is a Dutch multinational banking and financial services company</li>
 		<li><a href="./reports/razorpay">Razorpay</a> - Payment Gateway Solution for India</li>
 	</ul>
@@ -45,7 +45,8 @@ title: HTTPS Watch
 		<li><a href="./reports/varonis">Varonis</a> - Varonis is a security company with a security software platform to let organizations track, visualize, analyze and protect their unstructured data</li>
 	</ul>
 	<h5>Miscellaneous:</h5>
+	<ul>
 		<li><a href="./reports/freelancer">Freelancer</a> - Freelancer is a global crowdsourcing marketplace website, which allows potential employers to post jobs that freelancers can then bid to complete</li>
 		<li><a href="./reports/spacex">SpaceX</a> - SpaceX is an American aerospace manufacturer and space transport services company</li>
-	<ul>
+	</ul>
 </div>
