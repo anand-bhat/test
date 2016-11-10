@@ -29,7 +29,10 @@ layout: blank
 <div>
 	<h4>Categories:</h4>
 	<ul>
-		<li><a href="./reports/indianPharmacies">Indian Pharmacies</a> - Online pharmacies in India</li>
+		<li><a href="./reports/indianPharmacies">Indian Pharmacies</a> - Online pharmacies in India. Most, if not all, require a patient's details along with prescriptions when filling out an order.</li>
 		<li><a href="./reports/indianIncomeTaxFilingServices">Indian Income Tax Filing Services</a> - Income Tax Filing Services in India</li>
+		<li>To do: Public and private sector banks (90% complete)</li>
+		<li>To do: Payment services (10% complete)</li>
+		<li>To do: Securities and trading (50% complete)</li>
 	</ul>
 </div>
