@@ -7,46 +7,29 @@ title: HTTPS Watch
 </div>
 <hr>
 <div>
-	This project aims to create an actionable dashboard listing the TLS configurations of certain websites where good security is expected.
-	This uses the <a href="https://github.com/ssllabs/ssllabs-scan/blob/stable/ssllabs-api-docs.md">API</a> from <a href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs Server Test</a>
-	to evaluate a site's TLS configuration and displays its grade. Issues with a site's TLS configuration that prevent it from obtaining an 'A' grade or better are highlighted.
+	This project aims to create an actionable dashboard listing the TLS configurations of certain websites where good transport layer security is expected.
+	This uses the <a href="https://www.ssllabs.com/ssltest/index.html">Qualys SSL Labs Server Test</a> to evaluate a site's TLS configuration and displays its grade. Issues with a site's TLS configuration that prevent it from obtaining an 'A' grade or better are highlighted. The full report is also available via a hyperlink to the Qualys site.
+</div>
 <div>
+	At this time, the focus is on websites used by services in India. In my opinion, most internet users in India do not understand or underestimate the importance of online privacy and security and this is reflected
+	in the sorry state of HTTPS adoption and deployment across the board, especially for government agencies. While my request to mandate the use of HTTPS hasn't been acknowledged by the agency responsible for
+	maintaining government websites, my hope is that with enough exposure they will do something similar to what has been done by <a href="https://https.cio.gov/">the USA for Federal websites</a> and
+	<a href="https://www.ncsc.gov.uk/guidance/tls-external-facing-services">the UK</a>.
+</div>
+<div>
+	Most people associate HTTPS with things that need to be kept private, like login information or a page that accepts credit cards but it is becoming increasingly clear that all web properties need to use HTTPS to ensure a safe, secure and intrusion-free web experience. An excellent write-up for "HTTPS Everywhere" can be found at the aforementioned <a href="https://https.cio.gov/everything/">US Federal Government's HTTPS-Only standard site</a>.
+</div>
+<div>
+	The reason for including subdomains not normally used by the general public is that these are typically not maintained at the same standard as the main domain. Some of these (such as vpn.domain.com, 
+	webmail.domain.com etc.) are used by employees to access internal resources and it is imperative that these be protected at the same level, if not better, than a site that is used by the general public.
+	Having such a site have poor security may lead to the an employee's credentials being compromised which could give an attacker access to internal systems. Then there are subdomains that continue to be vulnerable
+	to serious veulnerabilies such as <a href="https://en.wikipedia.org/wiki/Heartbleed">Heartbleed</a> that can be a great asset to attackers.
+</div>
 <hr>
 <div>
 	<h4>Categories:</h4>
 	<ul>
 		<li><a href="./reports/indianPharmacies">Indian Pharmacies</a> - Online pharmacies in India</li>
 		<li><a href="./reports/indianIncomeTaxFilingServices">Indian Income Tax Filing Services</a> - Income Tax Filing Services in India</li>
-	</ul>
-	<br>
-	<h4>Specific domains, services or companies:</h4>
-	<h5>Banking, Financial services and Insurance:</h5>
-	<ul>
-		<li><a href="./reports/bankOfIreland">Bank of Ireland</a> - The Bank of Ireland is a commercial bank operation in Ireland and one of the traditional 'Big Four' Irish banks.</li>
-		<li><a href="./reports/danskeBank">Danske Bank</a> - Danske Bank is the largest bank in Denmark and a major retail bank in the northern European region with over 5 million retail customers.</li>
-		<li><a href="./reports/nsdl">NSDL</a> - National Securities Depository Limited (NSDL) is the largest securities depository in India</li>
-		<li><a href="./reports/payPal">PayPal</a> - PayPal Holdings, Inc. is an American company operating a worldwide online payments system</li>
-		<li><a href="./reports/rabobank">Rabobank</a> - Rabobank is a Dutch multinational banking and financial services company</li>
-		<li><a href="./reports/razorpay">Razorpay</a> - Payment Gateway Solution for India</li>
-	</ul>
-	<h5>Healthcare:</h5>
-	<ul>
-		<li><a href="./reports/mediAssistIndia">Medi Assist India</a> - Medi Assist India is India's largest healthcare TPA</li>
-		<li><a href="./reports/practo">Practo</a> - Patients use Practo to find and book appointments with doctors, and some doctors use their solutions to manage their practice</li>
-	</ul>
-	<h5>Technology, Internet Security and "The Cyber":</h5>
-	<ul>
-		<li><a href="./reports/perforce">Perforce</a> - Perforce Software is the developer of the commercial, proprietary revision control system Perforce, and the Helix version control system</li>
-		<li><a href="./reports/opswat">Opswat</a> - Opswat is a software company that provides security software development tools and services</li>
-		<li><a href="./reports/sansInstitute">SANS Institue</a> - The SANS Institute is a private U.S. for-profit company that specializes in information security and cybersecurity training</li>
-		<li><a href="./reports/silentCircle">Silent Circle</a> - Silent Circle is an encrypted communications firm that provides multiplatform secure communication services for mobile devices and desktop</li>
-		<li><a href="./reports/github">Github</a> - GitHub is a web-based Git repository hosting service</li>
-		<li><a href="./reports/twilio">Twilio</a> - Twilio is a cloud communications company that allows software developers to programmatically make and receive phone calls and send and receive text messages using its web service APIs</li>
-		<li><a href="./reports/varonis">Varonis</a> - Varonis is a security company with a security software platform to let organizations track, visualize, analyze and protect their unstructured data</li>
-	</ul>
-	<h5>Miscellaneous:</h5>
-	<ul>
-		<li><a href="./reports/freelancer">Freelancer</a> - Freelancer is a global crowdsourcing marketplace website, which allows potential employers to post jobs that freelancers can then bid to complete</li>
-		<li><a href="./reports/spaceX">SpaceX</a> - SpaceX is an American aerospace manufacturer and space transport services company</li>
 	</ul>
 </div>
