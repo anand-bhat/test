@@ -22,8 +22,8 @@ layout: blank
 	Having poor trasport layer security on such sites could lead to the an employee's credentials being compromised which could give an attacker access to internal systems. Then there are subdomains that continue to
 	be vulnerable to serious veulnerabilies such as <a href="https://en.wikipedia.org/wiki/Heartbleed">Heartbleed</a> that can be a great asset to attackers.
 	<br><br>
-	The subdomains considered for the tests here were discovered using a combination of Google searches (using the <cite>site</cite> operator), VirusTotal
-	(<cite>https://virustotal.com/en/domain/<i>domain.com</i>/information/</cite>) and <a href="https://dnsdumpster.com/">DNSDumspter</a>.
+	The subdomains considered for the tests here were discovered using a combination of Google searches (using the <i>site</i> operator), VirusTotal
+	(<i>https://virustotal.com/en/domain/{domain.com}/information/</i>) and <a href="https://dnsdumpster.com/">DNSDumspter</a>.
 	</div>
 <hr>
 <div>
