@@ -1,6 +1,6 @@
 var dataSet = [
 ['', 'myITreturn', 'auth.myitreturn.com', '52.66.140.103', 'No HTTPS', '2016-11-19', 'Unable to connect to the server', 'Indian Income Tax Filing Services', '?', 'HTTP only', '', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
-['', 'myITreturn', 'blog.myitreturn.com', '46.137.216.42', 'Could not connect', '2016-11-19', 'Unable to connect to the server', 'Indian Income Tax Filing Services', 'Blog', 'HTTP only', '', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'myITreturn', 'blog.myitreturn.com', '46.137.216.42', 'No HTTPS', '2016-11-19', 'Unable to connect to the server', 'Indian Income Tax Filing Services', 'Blog', 'HTTP only', '', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'efiler', 'blog.efiler.in', '166.62.12.1', 'No HTTPS', '2016-11-19', 'No secure protocols supported', 'Indian Income Tax Filing Services', 'Blog', 'HTTP only', '', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'myITreturn', 'chat.myitreturn.com', '52.66.136.19', 'No HTTPS', '2016-11-19', 'Unable to connect to the server', 'Indian Income Tax Filing Services', 'Chat', 'HTTP only', '', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Taxshax', 'blogs.taxshax.com', '209.255.200.198', 'Could not connect', '2016-11-19', 'Unable to connect to the server', 'Indian Income Tax Filing Services', '?', 'Unable to connect over HTTP and HTTPS', '', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
@@ -186,7 +186,7 @@ var dataSet = [
 ['', 'TaxSpanner', 'www.taxspanner.com', '54.251.168.32', 'A+', '2016-11-19', 'Ready', 'Indian Income Tax Filing Services', 'Home page', 'HTTP redirected to HTTPS', 'https://github.com/anand-bhat/httpswatch/issues/41', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Taxsmile', 'taxsmile.com', '137.59.201.144', 'C', '2016-11-19', 'Ready', 'Indian Income Tax Filing Services', 'Home page', 'HTTPS downgraded to HTTP', 'https://github.com/anand-bhat/httpswatch/issues/38', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No', 'Yes', 'No'] ,
 ];
-var chartData = [
+var chartDataSummary = [
 ['Grade', 'Number of sites', { role: 'style' }],
 ['A+', 9, 'color: Green'],
 ['A', 50, 'color: YellowGreen'],
@@ -196,7 +196,29 @@ var chartData = [
 ['T/ B', 17, 'color: Red'],
 ['T/ C', 1, 'color: Red'],
 ['F', 10, 'color: Red'],
-['No HTTPS', 23, 'color: Red'],
+['No HTTPS', 24, 'color: Red'],
 ['Scan error', 8, 'color: Gray'],
-['Could not connect', 8, 'color: Gray'],
+['Could not connect', 7, 'color: Gray'],
+];
+var chartDataCountsByOrg = [
+['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
+['H&R Block India', 0, 5, 0, 2, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, ''],
+['VitteTax', 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''],
+['Quicko', 0, 22, 0, 8, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 8, 0, 0, 0, ''],
+['TaxZippy', 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, ''],
+['Taxsmile', 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 1, 0, 0, 0, 0, ''],
+['Make My Returns', 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, ''],
+['Income Tax Department, Government of India', 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''],
+['HamaraTax', 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''],
+['MyTaxCafe', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, ''],
+['ClearTax', 0, 7, 0, 0, 0, 0, 0, 0, 1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, ''],
+['Tax Care India', 0, 2, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''],
+['myITreturn', 0, 7, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 1, ''],
+['efiler', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, ''],
+['Tax Manager', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, ''],
+['Chaireturn', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, ''],
+['Taxshax', 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, ''],
+['Tax Chanakya', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 0, 0, 0, 0, ''],
+['TaxSpanner', 9, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, ''],
+['Mytaxfiler', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 6, 0, 0, 0, 0, ''],
 ];

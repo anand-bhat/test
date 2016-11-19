@@ -4,6 +4,63 @@ function format(row) {
 	return '<table><tr><td>SSL Labs report: <a target="_blank" href="https://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on">' + row[2] + '</a></td></tr></table>';
 }
 
+function drawChartCountsByOrg() {
+	'use strict';
+	if (typeof chartDataCountsByOrg === 'undefined')
+		return;
+
+	var data = google.visualization.arrayToDataTable(chartDataCountsByOrg);
+	data.sort([{column: 0}]);
+
+	var options = {
+		isStacked: 'percent',
+		height: (50 * data.getNumberOfRows()),
+		legend: {
+			position: 'top',
+			maxLines: 2,
+			textStyle: {fontSize: 14}
+		},
+		chartArea: {height:'90%'},
+		series: {
+			0: {color: 'Green'},
+			1: {color: 'YellowGreen'},
+			2: {color: 'LightGreen'},
+			3: {color: 'Orange'},
+			4: {color: 'Orange'},
+			5: {color: 'Orange'},
+			6: {color: 'Orange'},
+			7: {color: 'Red'},
+			8: {color: 'Red'},
+			9: {color: 'Red'},
+			10: {color: 'Red'},
+			11: {color: 'Red'},
+			12: {color: 'Red'},
+			13: {color: 'Red'},
+			14: {color: 'Red'},
+			15: {color: 'Red'},
+			16: {color: 'Gray'},
+			17: {color: 'Gray'},
+			18: {color: 'Gray'},
+			19: {color: 'Gray'}
+		},
+		tooltip: {
+			textStyle: {fontSize: 14},
+			showColorCode: true
+		},
+		hAxis: {
+			minValue: 0,
+			ticks: [0, .25, .5, .75, 1],
+			textStyle: {fontSize: 14}
+		},
+		vAxis: {
+			textStyle: {fontSize: 14}
+		}
+	};
+
+	var chart = new google.visualization.BarChart(document.getElementById('chartCountsByOrg'));
+	chart.draw(data, options);
+}
+
 // Sort function for SSL Grade to show A+ first
 jQuery.extend(jQuery.fn.dataTableExt.oSort, {
 	'enumgrade-pre': function (a) {
@@ -23,52 +80,36 @@ jQuery.extend(jQuery.fn.dataTableExt.oSort, {
 			return 6;
 		case 'E':
 			return 7;
-		case 'M/ A+':
-			return 8;
-		case 'M/ A':
-			return 9;
-		case 'M/ A-':
-			return 10;
-		case 'M/ B':
-			return 11;
-		case 'M/ C':
-			return 12;
-		case 'M/ D':
-			return 13;
-		case 'M/ E':
-			return 14;
-		case 'M/ F':
-			return 15;
 		case 'T/ A+':
-			return 16;
+			return 8;
 		case 'T/ A':
-			return 17;
+			return 9;
 		case 'T/ A-':
-			return 18;
+			return 10;
 		case 'T/ B':
-			return 19;
+			return 11;
 		case 'T/ C':
-			return 20;
+			return 12;
 		case 'T/ D':
-			return 21;
+			return 13;
 		case 'T/ E':
-			return 22;
+			return 14;
 		case 'T/ F':
-			return 23;
+			return 15;
 		case 'F':
-			return 24;
+			return 16;
 		case 'No HTTPS':
-			return 25;
+			return 17;
 		case 'Scan error':
-			return 26;
+			return 18;
 		case 'Could not connect':
-			return 27;
+			return 19;
 		case 'Not scanned':
-			return 28;
+			return 20;
 		case 'Unknown domain':
-			return 29;
+			return 21;
 		default:
-			return 30;
+			return 22;
 		}
 	},
 
@@ -147,6 +188,8 @@ $(document).ready(function () {
 						break;
 					case 'B':
 					case 'C':
+					case 'D':
+					case 'E':
 						gradeClass = 'grade-orange';
 						break;
 					case 'Unknown domain':
@@ -278,7 +321,7 @@ $(document).ready(function () {
 		table.fixedHeader.adjust();
 	});
 
-	// Toggle option section visibility
+	// Toggle options section visibility
 	$('#toggleColumns').on('click', function (e) {
 		e.preventDefault();
 
@@ -291,4 +334,21 @@ $(document).ready(function () {
 			$(this).text('[hide section]');
 		}
 	});
+
+		// Toggle chart section visibility
+	$('#toggleChartCountsByOrg').on('click', function (e) {
+		e.preventDefault();
+
+		if ($('#chartCountsByOrg').is(':visible')) {
+			$('#chartCountsByOrg').hide();
+			$(this).text('[show section]');
+		}
+		else {
+			$('#chartCountsByOrg').show();
+			$(this).text('[hide section]');
+		}
+	});
+
+	google.charts.load('current', {packages: ['corechart', 'bar']});
+	google.charts.setOnLoadCallback(drawChartCountsByOrg);
 });
