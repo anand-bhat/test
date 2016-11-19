@@ -24,7 +24,7 @@ layout: blank
 	<br><br>
 	The subdomains considered for the tests here were discovered using a combination of Google searches (using the <i>site</i> operator), VirusTotal
 	(<i>https://virustotal.com/en/domain/{domain.com}/information/</i>) and <a href="https://dnsdumpster.com/">DNSDumspter</a>.
-	</div>
+</div>
 <hr>
 <div>
 	<h4>Categories:</h4>
