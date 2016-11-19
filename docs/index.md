@@ -19,7 +19,7 @@ layout: blank
 	<br><br>
 	The reason for including subdomains not normally used by the general public is that these are typically not maintained at the same standard as the main domain. Some of these (such as vpn.domain.com, 
 	webmail.domain.com etc.) are used by employees to access internal resources and it is imperative that these be protected at the same level, if not better, than a site that is used by the general public.
-	Having poor trasport layer security on such sites could lead to the an employee's credentials being compromised which could give an attacker access to internal systems. Then there are subdomains that continue to
+	Having poor transport layer security on such sites could lead to the an employee's credentials being compromised which could give an attacker access to internal systems. Then there are subdomains that continue to
 	be vulnerable to serious veulnerabilies such as <a href="https://en.wikipedia.org/wiki/Heartbleed">Heartbleed</a> that can be a great asset to attackers.
 	<br><br>
 	The subdomains considered for the tests here were discovered using a combination of Google searches (using the <i>site</i> operator), VirusTotal
