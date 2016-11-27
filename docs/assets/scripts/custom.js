@@ -217,7 +217,7 @@ $(document).ready(function () {
 						return '<a target="_blank" href="' + data + '">View</a>';
 					}
 					if (row[4] == 'A' || row[4] == 'A-' || row[4] == 'A+') {
-						return '-';
+						return data;
 					}
 					return '<a target="_blank" href="https://github.com/anand-bhat/httpswatch/issues/new">Create</a>';
 				},
