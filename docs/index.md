@@ -31,8 +31,17 @@ layout: blank
 	<ul>
 		<li><a href="./reports/indianPharmacies">Indian Pharmacies</a> - Online pharmacies in India. Most, if not all, require a patient's details along with prescriptions when filling out an order.</li>
 		<li><a href="./reports/indianIncomeTaxFilingServices">Indian Income Tax Filing Services</a> - Income Tax Filing Services in India</li>
-		<li>To do: Public and private sector banks (90% complete)</li>
+		<li>Indian Banks:
+			<ul>
+				<li><a href="./reports/indianBanksPublicSector">Public sector</a> - Public sector banks in India.</li>
+				<li><a href="./reports/indianBanksPrivateSector">Private sector</a> - Private sector banks in India.</li>
+			</ul>
+		</li>
 		<li>To do: Payment services (10% complete)</li>
-		<li>To do: Securities and trading (50% complete)</li>
+		<li>Securities and trading:
+			<ul>
+				<li><a href="./reports/NSDL">NSDL</a> - NSDL is the depository for the equity market in India.</li>
+			</ul>
+		</li>
 	</ul>
 </div>
