@@ -40,7 +40,7 @@ layout: blank
 		<li>To do: Payment services (10% complete)</li>
 		<li>Securities and trading:
 			<ul>
-				<li><a href="./reports/NSDL">NSDL</a> - NSDL is the depository for the equity market in India.</li>
+				<li><a href="./reports/nsdl">NSDL</a> - NSDL is the depository for the equity market in India.</li>
 			</ul>
 		</li>
 	</ul>
