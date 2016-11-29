@@ -250,7 +250,7 @@ var dataSet = [
 ['', 'Rabobank', 'portlet-team-4-vip.rabobank.nl', '145.72.72.124', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Dutch Banks', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Rabobank', 'procne.rabobank.nl', '145.72.104.226', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Dutch Banks', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Rabobank', 'portlet-team-27-vip.rabobank.nl', '145.72.72.150', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Dutch Banks', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
-['', 'Rabobank', 'reclameregels.rabobank.nl', '87.253.146.76', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Dutch Banks', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Rabobank', 'reclameregels.rabobank.nl', '87.253.146.76', 'No HTTPS', '2016-11-27', 'Unable to connect to the server', 'Dutch Banks', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Rabobank', 'rmail4.rabobank.nl', '145.72.121.17', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Dutch Banks', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Rabobank', 'tenant1.developer.rabobank.nl', '145.72.72.46', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Dutch Banks', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Rabobank', 'wmail2.rabobank.nl', '145.72.121.47', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Dutch Banks', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
@@ -292,7 +292,7 @@ var dataSet = [
 ['', 'Rabobank', 'orha56ww.rabobank.nl', '37.74.117.185', 'B', '2016-11-27', 'Ready', 'Dutch Banks', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'Yes', 'No', 'Yes', 'Yes'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A+', 42, 'color: Green'],
 ['A', 35, 'color: YellowGreen'],
 ['A-', 8, 'color: LightGreen'],
@@ -301,12 +301,12 @@ var chartDataSummary = [
 ['T/ A', 10, 'color: Red'],
 ['T/ B', 2, 'color: Red'],
 ['F', 1, 'color: Red'],
-['No HTTPS', 4, 'color: Red'],
+['No HTTPS', 5, 'color: Red'],
 ['Scan error', 2, 'color: Gray'],
 ['Unknown domain', 1, 'color: Gray'],
-['Could not connect', 180, 'color: Gray'],
+['Could not connect', 179, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['Rabobank', 42, 35, 8, 3, 3, 0, 0, 0, 10, 0, 2, 0, 0, 0, 1, 4, 2, 0, 1, 180, ''],
+['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
+['Rabobank', 42, 35, 8, 3, 3, null, null, 12, 1, 5, 2, null],
 ];

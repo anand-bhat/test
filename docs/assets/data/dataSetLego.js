@@ -34,7 +34,7 @@ var dataSet = [
 ['', 'Lego', 'factory.3rd.corp.lego.com', '171.20.71.229', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Entertainment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Lego', 'education.lego.com', '171.20.53.203', 'A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Lego', 'fetedesperes.lego.com', '171.20.53.203', 'T/ A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'Lego', 'guest-wlc.corp.lego.com', '1.1.1.1', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Entertainment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Lego', 'guest-wlc.corp.lego.com', '1.1.1.1', 'No HTTPS', '2016-11-27', 'Unable to connect to the server', 'Entertainment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Lego', 'fileshare.corp.lego.com', '171.20.71.36', 'A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Lego', 'citynewshub.lego.com', '52.84.213.195', 'A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Lego', 'citynewshub.lego.com', '52.84.213.164', 'A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
@@ -71,8 +71,8 @@ var dataSet = [
 ['', 'Lego', 'mindstorms.3rd.corp.lego.com', '171.20.71.229', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Entertainment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Lego', 'mail2.corp.lego.com', '171.20.71.19', 'A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Lego', 'legovpn.corp.lego.com', '171.20.71.103', 'T/ B', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'Yes', 'Yes'] ,
-['', 'Lego', 'omp.e.club.lego.com', '12.130.136.221', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Entertainment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
-['', 'Lego', 'omp.e.lego.com', '12.130.136.74', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Entertainment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Lego', 'omp.e.club.lego.com', '12.130.136.221', 'No HTTPS', '2016-11-27', 'Unable to connect to the server', 'Entertainment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Lego', 'omp.e.lego.com', '12.130.136.74', 'No HTTPS', '2016-11-27', 'Unable to connect to the server', 'Entertainment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Lego', 'meet.lego.com', '171.20.71.43', 'A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'Test failure', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Lego', 'minifigures.lego.com', '171.20.53.203', 'T/ A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Lego', 'mxca.corp.lego.com', '148.244.136.138', 'F', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'Yes', 'Yes'] ,
@@ -162,7 +162,7 @@ var dataSet = [
 ['', 'Lego', 'marvelsuperheroes.lego.com', '171.20.53.203', 'T/ A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Lego', 'jobsearch.lego.com', '171.20.71.17', 'A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Lego', 'mindstorms.lego.com', '171.20.53.203', 'T/ A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'Lego', 'omptrans.e.lego.com', '12.130.138.7', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Entertainment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Lego', 'omptrans.e.lego.com', '12.130.138.7', 'No HTTPS', '2016-11-27', 'Unable to connect to the server', 'Entertainment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Lego', 'monsterfighters.lego.com', '171.20.53.203', 'T/ A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Lego', 'ninjago.lego.com', '171.20.53.203', 'T/ A', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Lego', 'nexoknightseurope.lego.com', '54.154.7.207', 'A+', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
@@ -222,7 +222,7 @@ var dataSet = [
 ['', 'Lego', 'brandcatalogue.lego.com', '52.210.48.134', 'A+', '2016-11-27', 'Ready', 'Entertainment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A+', 14, 'color: Green'],
 ['A', 71, 'color: YellowGreen'],
 ['A-', 1, 'color: LightGreen'],
@@ -233,11 +233,11 @@ var chartDataSummary = [
 ['T/ B', 3, 'color: Red'],
 ['T/ C', 3, 'color: Red'],
 ['F', 7, 'color: Red'],
-['No HTTPS', 2, 'color: Red'],
+['No HTTPS', 6, 'color: Red'],
 ['Scan error', 1, 'color: Gray'],
-['Could not connect', 23, 'color: Gray'],
+['Could not connect', 19, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['Lego', 14, 71, 1, 4, 7, 0, 0, 0, 79, 6, 3, 3, 0, 0, 7, 2, 1, 0, 0, 23, ''],
+['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
+['Lego', 14, 71, 1, 4, 7, null, null, 91, 7, 6, 1, null],
 ];

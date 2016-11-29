@@ -101,7 +101,7 @@ var dataSet = [
 ['', 'Cylance', 'dellthreatdefense-eu.cylance.com', '52.58.223.18', 'A+', '2016-11-27', 'Ready', 'Computer Security', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A+', 22, 'color: Green'],
 ['A', 72, 'color: YellowGreen'],
 ['T/ C', 1, 'color: Red'],
@@ -111,6 +111,6 @@ var chartDataSummary = [
 ['Could not connect', 2, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['Cylance', 22, 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 2, ''],
+['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
+['Cylance', 22, 72, null, null, null, null, null, 1, 1, 1, null, null],
 ];

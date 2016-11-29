@@ -219,7 +219,7 @@ var dataSet = [
 ['', 'Twilio', 'lookups.twilio.com', '54.174.73.59', 'A+', '2016-11-27', 'Ready', 'Communications', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A+', 92, 'color: Green'],
 ['A', 66, 'color: YellowGreen'],
 ['A-', 2, 'color: LightGreen'],
@@ -233,6 +233,6 @@ var chartDataSummary = [
 ['Could not connect', 6, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['Twilio', 92, 66, 2, 5, 0, 0, 0, 0, 28, 1, 8, 2, 0, 0, 1, 7, 0, 0, 0, 6, ''],
+['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
+['Twilio', 92, 66, 2, 5, null, null, null, 39, 1, 7, null, null],
 ];

@@ -101,7 +101,7 @@ var dataSet = [
 ['', 'Opswat', 'scan.metadefender.com', '52.88.237.135', 'A', '2016-11-27', 'Ready', 'Computer Security', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A+', 2, 'color: Green'],
 ['A', 71, 'color: YellowGreen'],
 ['A-', 1, 'color: LightGreen'],
@@ -114,6 +114,6 @@ var chartDataSummary = [
 ['Could not connect', 5, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['Opswat', 2, 71, 1, 6, 0, 0, 0, 0, 1, 8, 1, 0, 0, 0, 0, 3, 2, 0, 0, 5, ''],
+['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
+['Opswat', 2, 71, 1, 6, null, null, null, 10, null, 3, 2, null],
 ];

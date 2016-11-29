@@ -179,7 +179,7 @@ var dataSet = [
 ['', 'SANS Institute', 'learn.sans.org', '54.148.64.250', 'A', '2016-11-27', 'Ready', 'Computer Security', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A+', 86, 'color: Green'],
 ['A', 35, 'color: YellowGreen'],
 ['A-', 1, 'color: LightGreen'],
@@ -190,6 +190,6 @@ var chartDataSummary = [
 ['Could not connect', 33, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['SANS Institute', 86, 35, 1, 6, 8, 0, 0, 0, 7, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 33, ''],
+['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
+['SANS Institute', 86, 35, 1, 6, 8, null, null, 9, null, null, null, null],
 ];

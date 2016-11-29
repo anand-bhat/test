@@ -307,7 +307,7 @@ var dataSet = [
 ['', 'Danske Bank', 'images.sunday.dk', '52.84.213.186', 'A', '2016-11-27', 'Ready', 'Danish Banks', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A+', 63, 'color: Green'],
 ['A', 48, 'color: YellowGreen'],
 ['A-', 79, 'color: LightGreen'],
@@ -320,6 +320,6 @@ var chartDataSummary = [
 ['Could not connect', 13, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['Danske Bank', 63, 48, 79, 7, 17, 0, 0, 0, 53, 0, 0, 0, 0, 0, 3, 15, 8, 0, 0, 13, ''],
+['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
+['Danske Bank', 63, 48, 79, 7, 17, null, null, 53, 3, 15, 8, null],
 ];

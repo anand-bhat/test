@@ -58,7 +58,7 @@ var dataSet = [
 ['', 'Bank of Ireland', 'www1.365online.com', '107.162.134.151', 'T/ B', '2016-11-26', 'Ready', 'Irish Banks', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A+', 7, 'color: Green'],
 ['A', 15, 'color: YellowGreen'],
 ['A-', 8, 'color: LightGreen'],
@@ -71,6 +71,6 @@ var chartDataSummary = [
 ['Could not connect', 6, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['Bank of Ireland', 7, 15, 8, 8, 0, 0, 0, 0, 5, 2, 2, 1, 0, 0, 0, 3, 0, 0, 0, 6, ''],
+['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
+['Bank of Ireland', 7, 15, 8, 8, null, null, null, 10, null, 3, null, null],
 ];

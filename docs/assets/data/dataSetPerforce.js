@@ -13,7 +13,7 @@ var dataSet = [
 ['', 'Perforce', 'helix.perforce.com', '23.92.225.144', 'F', '2016-11-26', 'Ready', 'Computer Software', '?', '?', '-', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Perforce', 'feedback.perforce.com', '169.55.254.51', 'F', '2016-11-26', 'Ready', 'Computer Software', '?', '?', '-', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'Yes', 'No'] ,
 ['', 'Perforce', 'cloud.perforce.com', '12.234.39.145', 'B', '2016-11-26', 'Ready', 'Computer Software', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'Yes', 'No'] ,
-['', 'Perforce', 'cloud.perforce.com', '2002:0:0:0:0:0:cea:2791', 'No HTTPS', '2016-11-26', 'Unable to connect to the server', 'Computer Software', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Perforce', 'cloud.perforce.com', '2002:0:0:0:0:0:cea:2791', 'Could not connect', '2016-11-26', 'Unable to connect to the server', 'Computer Software', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Perforce', 'mx3.perforce.com', '12.234.39.215', 'Could not connect', '2016-11-26', 'Unable to connect to the server', 'Computer Software', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Perforce', 'mx3c.perforce.com', '107.1.244.215', 'Could not connect', '2016-11-26', 'Unable to connect to the server', 'Computer Software', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Perforce', 'mx4a.perforce.com', '12.234.39.216', 'Could not connect', '2016-11-26', 'Unable to connect to the server', 'Computer Software', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
@@ -58,7 +58,7 @@ var dataSet = [
 ['', 'Perforce', 'cdist2.perforce.com', '52.84.213.204', 'A', '2016-11-26', 'Ready', 'Computer Software', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A+', 4, 'color: Green'],
 ['A', 9, 'color: YellowGreen'],
 ['A-', 1, 'color: LightGreen'],
@@ -68,10 +68,10 @@ var chartDataSummary = [
 ['T/ A-', 3, 'color: Red'],
 ['T/ B', 1, 'color: Red'],
 ['F', 6, 'color: Red'],
-['No HTTPS', 10, 'color: Red'],
-['Could not connect', 15, 'color: Gray'],
+['No HTTPS', 9, 'color: Red'],
+['Could not connect', 16, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['Perforce', 4, 9, 1, 5, 1, 0, 0, 0, 2, 3, 1, 0, 0, 0, 6, 10, 0, 0, 0, 15, ''],
+['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
+['Perforce', 4, 9, 1, 5, 1, null, null, 6, 6, 9, null, null],
 ];
