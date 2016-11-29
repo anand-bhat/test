@@ -161,7 +161,7 @@ var dataSet = [
 ['', 'Twilio', 'eventgw.twilio.com', '54.165.189.28', 'A', '2016-11-27', 'Ready', 'Communications', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Twilio', 'eventgw.twilio.com', '34.192.132.93', 'A', '2016-11-27', 'Ready', 'Communications', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Twilio', 'quanxunwangbaicaiboyintiyanjin.twilio.com', '23.209.81.18', 'A+', '2016-11-27', 'Ready', 'Communications', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'Twilio', 'status.authy.com', '54.246.110.129', 'No HTTPS', '2016-11-27', 'Unable to connect to the server', 'Communications', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Twilio', 'status.authy.com', '54.246.110.129', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Communications', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Twilio', 'sandbox-hit.authy.com', '104.16.1.17', 'A+', '2016-11-27', 'Ready', 'Communications', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Twilio', 'sandbox-hit.authy.com', '104.16.0.17', 'A+', '2016-11-27', 'Ready', 'Communications', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Twilio', 'staging-2.authy.com', '104.16.1.17', 'A+', '2016-11-27', 'Ready', 'Communications', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
@@ -229,10 +229,10 @@ var chartDataSummary = [
 ['T/ B', 8, 'color: Red'],
 ['T/ C', 2, 'color: Red'],
 ['F', 1, 'color: Red'],
-['No HTTPS', 7, 'color: Red'],
-['Could not connect', 6, 'color: Gray'],
+['No HTTPS', 6, 'color: Red'],
+['Could not connect', 7, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
 ['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
-['Twilio', 92, 66, 2, 5, null, null, null, 39, 1, 7, null, null],
+['Twilio', 92, 66, 2, 5, null, null, null, 39, 1, 6, null, null],
 ];

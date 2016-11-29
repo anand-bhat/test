@@ -19,7 +19,7 @@ var dataSet = [
 ['', 'Freelancer', 'cz.freelancer.com', '50.19.232.180', 'A', '2016-11-27', 'Ready', 'Employment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Freelancer', 'cz.freelancer.com', '50.19.229.4', 'A', '2016-11-27', 'Ready', 'Employment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Freelancer', 'freelancer.com', '50.19.229.4', 'A', '2016-11-27', 'Ready', 'Employment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'Freelancer', 'hosting.freelancer.com', '75.126.128.3', 'No HTTPS', '2016-11-27', 'Unable to connect to the server', 'Employment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Freelancer', 'hosting.freelancer.com', '75.126.128.3', 'Could not connect', '2016-11-27', 'Unable to connect to the server', 'Employment', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Freelancer', 'gate.linux.freelancer.com', '23.23.74.71', 'T/ A', '2016-11-27', 'Ready', 'Employment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Freelancer', 'dk.freelancer.com', '23.23.74.71', 'A', '2016-11-27', 'Ready', 'Employment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Freelancer', 'dk.freelancer.com', '50.19.232.180', 'A', '2016-11-27', 'Ready', 'Employment', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
@@ -232,11 +232,11 @@ var chartDataSummary = [
 ['B', 4, 'color: Orange'],
 ['C', 3, 'color: Orange'],
 ['T/ A', 94, 'color: Red'],
-['No HTTPS', 7, 'color: Red'],
+['No HTTPS', 6, 'color: Red'],
 ['Unknown domain', 1, 'color: Gray'],
-['Could not connect', 21, 'color: Gray'],
+['Could not connect', 22, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
 ['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
-['Freelancer', null, 96, null, 4, 3, null, null, 94, null, 7, null, null],
+['Freelancer', null, 96, null, 4, 3, null, null, 94, null, 6, null, null],
 ];

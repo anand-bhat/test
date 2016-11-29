@@ -1,7 +1,7 @@
 var dataSet = [
-['', 'Medi Assist India', 'rsby.mediassistindia.com', '115.248.177.245', 'Could not connect', '2016-11-26', 'Unable to connect to the server', 'Indian Healthcare Providers', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
-['', 'Medi Assist India', 'rsby.mediassistindia.com', '119.82.103.202', 'Could not connect', '2016-11-26', 'Unable to connect to the server', 'Indian Healthcare Providers', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
-['', 'Medi Assist India', 'rsby.mediassistindia.com', '182.75.93.7', 'Could not connect', '2016-11-26', 'Unable to connect to the server', 'Indian Healthcare Providers', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Medi Assist India', 'rsby.mediassistindia.com', '115.248.177.245', 'No HTTPS', '2016-11-26', 'Unable to connect to the server', 'Indian Healthcare Providers', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Medi Assist India', 'rsby.mediassistindia.com', '119.82.103.202', 'No HTTPS', '2016-11-26', 'Unable to connect to the server', 'Indian Healthcare Providers', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Medi Assist India', 'rsby.mediassistindia.com', '182.75.93.7', 'No HTTPS', '2016-11-26', 'Unable to connect to the server', 'Indian Healthcare Providers', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Medi Assist India', 'infiniti.medibuddy.in', '52.172.11.146', 'C', '2016-11-26', 'Ready', 'Indian Healthcare Providers', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', 'No'] ,
 ['', 'Medi Assist India', 'mediassistindia.com', '138.91.36.86', 'C', '2016-11-26', 'Ready', 'Indian Healthcare Providers', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'Yes', 'No'] ,
 ['', 'Medi Assist India', 'dtsapi-prod.mediassistindia.com', '119.82.103.211', 'F', '2016-11-26', 'Ready', 'Indian Healthcare Providers', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'Yes', 'No'] ,
@@ -58,7 +58,7 @@ var dataSet = [
 ['', 'Medi Assist India', 'hcl.mediassistindia.com', '124.124.99.3', 'F', '2016-11-26', 'Ready', 'Indian Healthcare Providers', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'Yes', 'No'] ,
 ['', 'Medi Assist India', 'hcl.mediassistindia.com', '119.82.103.205', 'F', '2016-11-26', 'Ready', 'Indian Healthcare Providers', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'Yes', 'No'] ,
 ['', 'Medi Assist India', 'hcl.mediassistindia.com', '182.75.93.21', 'F', '2016-11-26', 'Ready', 'Indian Healthcare Providers', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'Yes', 'No'] ,
-['', 'Medi Assist India', 'mx2.mediassistindia.com', '23.92.18.243', 'No HTTPS', '2016-11-26', 'Unable to connect to the server', 'Indian Healthcare Providers', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Medi Assist India', 'mx2.mediassistindia.com', '23.92.18.243', 'Could not connect', '2016-11-26', 'Unable to connect to the server', 'Indian Healthcare Providers', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Medi Assist India', 'tpa.mediassistindia.com', '119.82.103.201', 'F', '2016-11-26', 'Ready', 'Indian Healthcare Providers', '?', '?', '-', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'No', 'No', 'No', 'No', 'Yes', 'No'] ,
 ['', 'Medi Assist India', 'tpa.mediassistindia.com', '220.227.77.140', 'F', '2016-11-26', 'Ready', 'Indian Healthcare Providers', '?', '?', '-', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'No', 'No', 'No', 'No', 'Yes', 'No'] ,
 ['', 'Medi Assist India', 'tpa.mediassistindia.com', '182.75.93.6', 'F', '2016-11-26', 'Ready', 'Indian Healthcare Providers', '?', '?', '-', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'No', 'No', 'No', 'No', 'Yes', 'No'] ,
@@ -97,10 +97,10 @@ var chartDataSummary = [
 ['A', 50, 'color: YellowGreen'],
 ['C', 3, 'color: Orange'],
 ['F', 31, 'color: Red'],
-['No HTTPS', 5, 'color: Red'],
-['Could not connect', 3, 'color: Gray'],
+['No HTTPS', 7, 'color: Red'],
+['Could not connect', 1, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
 ['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
-['Medi Assist India', null, 50, null, null, 3, null, null, null, 31, 5, null, null],
+['Medi Assist India', null, 50, null, null, 3, null, null, null, 31, 7, null, null],
 ];
