@@ -13,16 +13,23 @@ function drawChartCountsByOrg() {
 	data.sort([{column: 0}]);
 
 	var options = {
-		isStacked: 'percent',
+		bar: {groupWidth: 30},
+		chartArea: {
+			bottom: 50,
+			top: 50
+		},
+		hAxis: {
+			minValue: 0,
+			ticks: [0, .25, .5, .75, 1],
+			textStyle: {fontSize: 14}
+		},
 		height: (100 + (60 * data.getNumberOfRows())),
+		isStacked: 'percent',
 		legend: {
 			maxLines: 1,
 			position: 'top',
 			textStyle: {fontSize: 14}
 		},
-		chartArea: {
-			bottom: 50,
-			top: 50},
 		series: {
 			0: {color: 'Green'},
 			1: {color: 'YellowGreen'},
@@ -39,11 +46,6 @@ function drawChartCountsByOrg() {
 		tooltip: {
 			textStyle: {fontSize: 14},
 			showColorCode: true
-		},
-		hAxis: {
-			minValue: 0,
-			ticks: [0, .25, .5, .75, 1],
-			textStyle: {fontSize: 14}
 		},
 		vAxis: {
 			textStyle: {fontSize: 14}
