@@ -55,7 +55,7 @@ var dataSet = [
 ['', 'Silent Circle', 'stats.silentcircle.com', '54.93.152.134', 'A+', '2016-11-26', 'Ready', 'Communications', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A+', 16, 'color: Green'],
 ['A', 4, 'color: YellowGreen'],
 ['B', 1, 'color: Orange'],
@@ -65,6 +65,6 @@ var chartDataSummary = [
 ['Could not connect', 14, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['Silent Circle', 16, 4, 0, 1, 0, 0, 0, 0, 16, 0, 0, 2, 0, 0, 1, 0, 0, 0, 0, 14, ''],
+['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T', 'F', 'No HTTPS', 'Scan error', 'Not scanned'],
+['Silent Circle', 16, 4, null, 1, null, null, null, 18, 1, null, null, null],
 ];

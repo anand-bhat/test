@@ -14,13 +14,13 @@ function drawChartCountsByOrg() {
 
 	var options = {
 		isStacked: 'percent',
-		height: (50 * data.getNumberOfRows()),
+		height: (50 + (50 * data.getNumberOfRows())),
 		legend: {
 			position: 'top',
 			maxLines: 2,
 			textStyle: {fontSize: 14}
 		},
-		chartArea: {height:'90%'},
+		chartArea: {height: '90%'},
 		series: {
 			0: {color: 'Green'},
 			1: {color: 'YellowGreen'},
@@ -31,17 +31,8 @@ function drawChartCountsByOrg() {
 			6: {color: 'Orange'},
 			7: {color: 'Red'},
 			8: {color: 'Red'},
-			9: {color: 'Red'},
-			10: {color: 'Red'},
-			11: {color: 'Red'},
-			12: {color: 'Red'},
-			13: {color: 'Red'},
-			14: {color: 'Red'},
-			15: {color: 'Red'},
-			16: {color: 'Gray'},
-			17: {color: 'Gray'},
-			18: {color: 'Gray'},
-			19: {color: 'Gray'}
+			9: {color: 'Gray'},
+			10: {color: 'Gray'}
 		},
 		tooltip: {
 			textStyle: {fontSize: 14},
@@ -349,6 +340,6 @@ $(document).ready(function () {
 		}
 	});
 
-	google.charts.load('current', {packages: ['corechart', 'bar']});
+	google.charts.load('current', {packages: ['corechart']});
 	google.charts.setOnLoadCallback(drawChartCountsByOrg);
 });

@@ -55,7 +55,7 @@ var dataSet = [
 ['', 'SpaceX', 'supplierxchange.spacex.com', '192.31.242.161', 'F', '2016-11-26', 'Ready', 'Aerospace', '?', '?', '-', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A', 14, 'color: YellowGreen'],
 ['A-', 3, 'color: LightGreen'],
 ['B', 1, 'color: Orange'],
@@ -68,6 +68,6 @@ var chartDataSummary = [
 ['Could not connect', 23, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['SpaceX', 0, 14, 3, 1, 1, 0, 0, 0, 0, 3, 1, 2, 0, 0, 3, 3, 0, 0, 0, 23, ''],
+['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T', 'F', 'No HTTPS', 'Scan error', 'Not scanned'],
+['SpaceX', null, 14, 3, 1, 1, null, null, 6, 3, 3, null, null],
 ];

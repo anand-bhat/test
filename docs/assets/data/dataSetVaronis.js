@@ -50,7 +50,7 @@ var dataSet = [
 ['', 'Varonis', 'sip-external-de.varonis.com', '198.231.26.21', 'C', '2016-11-26', 'Ready', 'Computer Security', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', 'No'] ,
 ];
 var chartDataSummary = [
-['Grade', 'Number of sites', { role: 'style' }],
+['Grade', 'Number of sites', {role: 'style'}],
 ['A', 10, 'color: YellowGreen'],
 ['A-', 4, 'color: LightGreen'],
 ['B', 7, 'color: Orange'],
@@ -62,6 +62,6 @@ var chartDataSummary = [
 ['Could not connect', 4, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
-['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T/ A+', 'T/ A', 'T/ A-', 'T/ B', 'T/ C', 'T/ D', 'T/ E', 'F', 'No HTTPS', 'Scan error', 'Not scanned', 'Unknown domain', 'Could not connect', {role: 'annotation'}],
-['Varonis', 0, 10, 4, 7, 11, 0, 0, 0, 4, 4, 0, 0, 0, 0, 1, 4, 0, 0, 0, 4, ''],
+['Organization', 'A+', 'A', 'A-', 'B', 'C', 'D', 'E', 'T', 'F', 'No HTTPS', 'Scan error', 'Not scanned'],
+['Varonis', null, 10, 4, 7, 11, null, null, 8, 1, 4, null, null],
 ];
