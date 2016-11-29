@@ -14,13 +14,15 @@ function drawChartCountsByOrg() {
 
 	var options = {
 		isStacked: 'percent',
-		height: (50 + (50 * data.getNumberOfRows())),
+		height: (100 + (60 * data.getNumberOfRows())),
 		legend: {
+			maxLines: 1,
 			position: 'top',
-			maxLines: 2,
 			textStyle: {fontSize: 14}
 		},
-		chartArea: {height: '90%'},
+		chartArea: {
+			bottom: 50,
+			top: 50},
 		series: {
 			0: {color: 'Green'},
 			1: {color: 'YellowGreen'},
