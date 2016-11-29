@@ -40,7 +40,8 @@ function drawChartCountsByOrg() {
 			6: {color: 'Orange'},
 			7: {color: 'Red'},
 			8: {color: 'Red'},
-			9: {color: 'Gray'},
+			9: {color: 'Red'},
+			10: {color: 'Gray'},
 			10: {color: 'Gray'}
 		},
 		tooltip: {
