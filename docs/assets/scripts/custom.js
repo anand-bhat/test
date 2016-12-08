@@ -357,7 +357,7 @@ $(document).ready(function () {
 		}
 	});
 
-	// if a datatable is searched, sync it to the URL hash
+	// If the datatable with HTTPS data is searched, sync it to the URL hash
 	$('#httpsdata').on('search.dt', function(e, settings) {
 		e.preventDefault();
 		var query = $("input[type=search]").val();
