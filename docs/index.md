@@ -37,7 +37,7 @@ layout: blank
 				<li><a href="./reports/indianBanksPrivateSector">Private sector</a> - Private sector banks in India</li>
 			</ul>
 		</li>
-		<li>To do: Payment services (10% complete)</li>
+		<li><a href="./reports/indianPaymentServices">Payment gateways and payment related services</a></li>
 		<li>Securities and trading:
 			<ul>
 				<li><a href="./reports/nsdl">NSDL</a> - NSDL is the depository for the equity market in India</li>
