@@ -768,9 +768,6 @@
           "host": "incontroller.secure.ebs.in"
         },
         {
-          "host": "monitor.secure.ebs.in"
-        },
-        {
           "host": "notification.ebs.in"
         },
         {
@@ -1086,9 +1083,6 @@
         },
         {
           "host": "status.juspay.in"
-        },
-        {
-          "host": "www.krypton.juspay.in"
         }
       ]
     },
