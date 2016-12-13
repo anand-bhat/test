@@ -110,7 +110,7 @@ function drawChartSummary() {
 		}
 	};
 
-	var chartSummary = new google.visualization.BarChart(document.getElementById('chartSummary'));
+	var chartSummary = new google.visualization.PieChart(document.getElementById('chartSummary'));
 	chartSummary.draw(dataChartSummary, optionsChartSummary);
 }
 
