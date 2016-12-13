@@ -10,9 +10,9 @@ function drawChartCountsByOrg() {
 		return;
 	}
 
-	var dataChartCountsByOrg = google.visualization.arrayToDataTable(chartDataCountsByOrg);
+	var data = google.visualization.arrayToDataTable(chartDataCountsByOrg);
 
-	var optionsChartCountsByOrg = {
+	var options = {
 		bar: {groupWidth: 30},
 		chartArea: {
 			bottom: 50,
@@ -23,7 +23,7 @@ function drawChartCountsByOrg() {
 			ticks: [0, 0.25, 0.5, 0.75, 1],
 			textStyle: {fontSize: 14}
 		},
-		height: (100 + (60 * dataChartCountsByOrg.getNumberOfRows())),
+		height: (100 + (60 * data.getNumberOfRows())),
 		isStacked: 'percent',
 		legend: {
 			maxLines: 1,
@@ -53,65 +53,8 @@ function drawChartCountsByOrg() {
 		}
 	};
 
-	var chartCountsByOrg = new google.visualization.BarChart(document.getElementById('chartCountsByOrg'));
-	chartCountsByOrg.draw(dataChartCountsByOrg, optionsChartCountsByOrg);
-}
-
-function drawChartSummary() {
-	'use strict';
-	if ((typeof chartDataSummary === 'undefined') ||(typeof google === 'undefined') ) {
-		return;
-	}
-
-	var dataChartSummary = google.visualization.arrayToDataTable(chartDataSummary);
-
-	var optionsChartSummary = {
-		pieHole: 0.4,
-	};
-
-	var optionsChartSummary1 = {
-		bar: {groupWidth: 30},
-		chartArea: {
-			bottom: 50,
-			top: 50
-		},
-		hAxis: {
-			minValue: 0,
-			ticks: [0, 0.25, 0.5, 0.75, 1],
-			textStyle: {fontSize: 14}
-		},
-		height: (100 + (60 * dataChartSummary.getNumberOfRows())),
-		isStacked: 'percent',
-		legend: {
-			maxLines: 1,
-			position: 'top',
-			textStyle: {fontSize: 14}
-		},
-		series: {
-			0: {color: 'Green'},
-			1: {color: 'YellowGreen'},
-			2: {color: 'LightGreen'},
-			3: {color: 'Orange'},
-			4: {color: 'Orange'},
-			5: {color: 'Orange'},
-			6: {color: 'Orange'},
-			7: {color: 'Red'},
-			8: {color: 'Red'},
-			9: {color: 'Red'},
-			10: {color: 'Gray'},
-			11: {color: 'Gray'}
-		},
-		tooltip: {
-			textStyle: {fontSize: 14},
-			showColorCode: true
-		},
-		vAxis: {
-			textStyle: {fontSize: 14}
-		}
-	};
-
-	var chartSummary = new google.visualization.PieChart(document.getElementById('chartSummary'));
-	chartSummary.draw(dataChartSummary, optionsChartSummary);
+	var chart = new google.visualization.BarChart(document.getElementById('chartCountsByOrg'));
+	chart.draw(data, options);
 }
 
 // Sort function for SSL Grade to show A+ first
@@ -415,20 +358,6 @@ $(document).ready(function () {
 		}
 	});
 
-	// Toggle chart section visibility
-	$('#toggleChartSummary').on('click', function (e) {
-		e.preventDefault();
-
-		if ($('#chartCountsSummary').is(':visible')) {
-			$('#chartCountsSummary').hide();
-			$(this).text('[show section]');
-		}
-		else {
-			$('#chartCountsSummary').show();
-			$(this).text('[hide section]');
-		}
-	});
-
 	// If the datatable with HTTPS data is searched, sync it to the URL hash
 	$('#httpsdata').on('search.dt', function(e, settings) {
 		e.preventDefault();
@@ -445,5 +374,4 @@ $(document).ready(function () {
 	}
 	google.charts.load('current', {packages: ['corechart']});
 	google.charts.setOnLoadCallback(drawChartCountsByOrg);
-	google.charts.setOnLoadCallback(drawChartSummary);
 });
