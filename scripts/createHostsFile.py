@@ -3,7 +3,10 @@ import json
 import sys
 
 
-def createHostsFile(domains):
+def createHostsFile(domainsFile):
+    with open(domainsFile, 'r') as myfile:
+        domains = myfile.read()
+
     domainsJSON = json.loads(domains)
 
     hosts = []
@@ -38,10 +41,7 @@ def main(argv):
         print('createHostsFile.py: ERROR: Missing parameter --domainsfile')
         sys.exit(2)
 
-    with open(domainsFile, 'r') as myfile:
-        domains = myfile.read()
-
-    createHostsFile(domains)
+    createHostsFile(domainsFile)
 
 
 if __name__ == '__main__':

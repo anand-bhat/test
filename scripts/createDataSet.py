@@ -79,8 +79,6 @@ def isBitSet(x, n):
 
 
 def hasSecureEndpoint(ssllabsJSON, hostToBeChecked):
-    failures = ['No secure protocols supported',
-                'Unable to connect to the server']
     for labsReport in ssllabsJSON:
         if labsReport['host'] != hostToBeChecked:
             continue
@@ -88,9 +86,16 @@ def hasSecureEndpoint(ssllabsJSON, hostToBeChecked):
         if labsReport['status'] != 'READY':
             continue
 
-        for endpoint in labsReport['endpoints']:
-            if endpoint.get('statusMessage', '') not in failures:
-                return True
+        return(hasSecureIPEndpoint(labsReport['endpoints']))
+    return False
+
+
+def hasSecureIPEndpoint(endpoints):
+    failures = ['No secure protocols supported',
+                'Unable to connect to the server']
+    for endpoint in endpoints:
+        if endpoint.get('statusMessage', '') not in failures:
+            return True
     return False
 
 
@@ -446,7 +451,7 @@ def main(argv):
                         grade = 'Could not connect'
                     else:
                         # Check if host can be reached via HTTP
-                        if (False and canConnect('http://' + host)):
+                        if (canConnect('http://' + host)):
                             grade = 'No HTTPS'
                         else:
                             grade = 'Could not connect'
