@@ -3,6 +3,21 @@ import json
 import sys
 
 
+def createHostsFile(domains):
+    domainsJSON = json.loads(domains)
+
+    hosts = []
+
+    for orgRecord in domainsJSON['organizations']:
+        for hostRecord in orgRecord['hosts']:
+            host = hostRecord.get('host', '')
+
+            if host != '' and ':' not in host:
+                hosts.append(host)
+
+    print('\n'.join(sorted(set(hosts))))
+
+
 def main(argv):
     domainsFile = ''
 
@@ -26,18 +41,8 @@ def main(argv):
     with open(domainsFile, 'r') as myfile:
         domains = myfile.read()
 
-    domainsJSON = json.loads(domains)
+    createHostsFile(domains)
 
-    hosts = []
-
-    for orgRecord in domainsJSON['organizations']:
-        for hostRecord in orgRecord['hosts']:
-            host = hostRecord.get('host', '')
-
-            if host != '' and ':' not in host:
-                hosts.append(host)
-
-    print('\n'.join(sorted(set(hosts))))
 
 if __name__ == '__main__':
     main(sys.argv[1:])
