@@ -16,9 +16,6 @@ def booleanToYesNo(value):
 
 
 def getExtraHostData(jsonData, host, key):
-    if key == 'industry':
-        return jsonData.get('industry', '')
-
     for orgRecord in jsonData['organizations']:
         for hostRecord in orgRecord['hosts']:
             if hostRecord.get('host', '?') in [host, '*']:
@@ -41,18 +38,22 @@ def openSslCcsValue(value):
 
 
 def openSSLLuckyMinus20Value(value):
-    return ('Test failure' if value == -1
-            else 'Unknown' if value == 0
-            else 'No' if value == 1
-            else 'Yes' if value == 2
-            else '-')
+    switcher = {
+        -1: 'Test failure',
+        0: 'Unknown',
+        1: 'No',
+        2: 'Yes'
+    }
+    return switcher.get(value, '-')
 
 
 def weakDHValue(value):
-    return ('No' if value == 0
-            else 'No; but does not use custom primes' if value == 1
-            else 'Yes' if value == 2
-            else 'No')
+    switcher = {
+        0: 'No',
+        1: 'No; but does not use custom primes',
+        2: 'Yes'
+    }
+    return switcher.get(value, 'No')
 
 
 def lacksFSValue(value):
@@ -249,8 +250,8 @@ def main(argv):
         hostsFromSSLLabsReport.append(host)
 
         # Fetch additional data from domains JSON
+        industry = domainsJSON.get('industry', '')
         org = getExtraHostData(domainsJSON, host, 'organization')
-        industry = getExtraHostData(domainsJSON, host, 'industry')
         hostPurpose = getExtraHostData(domainsJSON, host, 'hostPurpose')
         httpsBehavior = getExtraHostData(domainsJSON, host, 'httpsBehavior')
         issueReport = getExtraHostData(domainsJSON, host, 'issueReport')
