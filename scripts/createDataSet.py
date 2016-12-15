@@ -30,12 +30,14 @@ def getExtraHostData(jsonData, host, key):
 
 
 def openSslCcsValue(value):
-    return ('Test failure' if value == -1
-            else 'Unknown' if value == 0
-            else 'No' if value == 1
-            else 'Possibly' if value == 2
-            else 'Yes' if value == 3
-            else '-')
+    switcher = {
+        -1: 'Test failure',
+        0: 'Unknown',
+        1: 'No',
+        2: 'Possibly',
+        3: 'Yes'
+    }
+    return switcher.get(value, '-')
 
 
 def openSSLLuckyMinus20Value(value):
@@ -60,13 +62,15 @@ def lacksFSValue(value):
 
 
 def poodleTlsValue(value):
-    return ('Test timeout' if value == -3
-            else 'No' if value == -2
-            else 'Test failure' if value == -1
-            else 'Unknown' if value == 0
-            else 'No' if value == 1
-            else 'Yes' if value == 2
-            else '-')
+    switcher = {
+        -3: 'Test timeout',
+        -2: 'No',
+        -1: 'Test failure',
+        0: 'Unknown',
+        1: 'No',
+        2: 'Yes'
+    }
+    return switcher.get(value, '-')
 
 
 def isBitSet(x, n):
@@ -445,6 +449,7 @@ def main(argv):
                     else:
                         # Check if host can be reached via HTTP
                         if (canConnect('http://' + host)):
+                        if (False and canConnect('http://' + host)):
                             grade = 'No HTTPS'
                         else:
                             grade = 'Could not connect'
@@ -461,7 +466,8 @@ def main(argv):
                              insecureRenegotiation, notls, trustIssues, poodle,
                              notlsv12, rc4WithModern, supportsRc4, sslv3,
                              weakDH, hasIncompleteChain, weakPrivateKey,
-                             lacksFS, lacksSecureRenegotiation, sha1Certificate]
+                             lacksFS, lacksSecureRenegotiation,
+                             sha1Certificate]
             print(dataSetValues, ',')
 
             # Update chart data
