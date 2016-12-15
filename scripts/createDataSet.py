@@ -448,7 +448,6 @@ def main(argv):
                         grade = 'Could not connect'
                     else:
                         # Check if host can be reached via HTTP
-                        if (canConnect('http://' + host)):
                         if (False and canConnect('http://' + host)):
                             grade = 'No HTTPS'
                         else:
