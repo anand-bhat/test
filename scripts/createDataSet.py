@@ -94,7 +94,7 @@ def hasSecureEndpoint(ssllabsJSON, hostToBeChecked):
     return False
 
 
-def updateCountsSummary(table, key):
+def updateCounts(table, key):
     if key in table:
         table[key] = table[key] + 1
     else:
@@ -108,14 +108,11 @@ def updateCountsByOrg(table, org, key):
 
     if org in table:
         counts = table[org]
-        if key in counts:
-            counts[key] = counts[key] + 1
-        else:
-            counts[key] = 1
-    else:
-        counts = {}
-        counts[key] = 1
-        table[org] = counts
+        return updateCounts(counts, key)
+
+    counts = {}
+    counts[key] = 1
+    table[org] = counts
     return table
 
 
@@ -276,7 +273,7 @@ def main(argv):
             print(dataSetValues, ',')
 
             # Update chart data
-            updateCountsSummary(countsSummary, grade)
+            updateCounts(countsSummary, grade)
             updateCountsByOrg(countsByOrg, org, grade)
 
             # Proceed to next record in SSL Labs scan data
@@ -471,7 +468,7 @@ def main(argv):
             print(dataSetValues, ',')
 
             # Update chart data
-            updateCountsSummary(countsSummary, grade)
+            updateCounts(countsSummary, grade)
             updateCountsByOrg(countsByOrg, org, grade)
 
     # Handle hosts from domains list that were not scanned. Cases:
@@ -500,7 +497,7 @@ def main(argv):
             print(dataSetValues, ',')
 
             # Update chart data
-            updateCountsSummary(countsSummary, 'Not scanned')
+            updateCounts(countsSummary, 'Not scanned')
             updateCountsByOrg(countsByOrg, org, 'Not scanned')
 
     # Terminate dataSet
