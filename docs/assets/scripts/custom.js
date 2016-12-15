@@ -194,7 +194,7 @@ $(document).ready(function () {
 						return '<a target="_blank" href="' + data + '">View</a>';
 					}
 
-					if ($.inArray(row[4], gradesNotRequiringReport) != -1) {
+					if ($.inArray(row[4], gradesNotRequiringReport) !== -1) {
 						return data;
 					}
 					return '<a target="_blank" href="https://github.com/anand-bhat/httpswatch/issues/new">Create</a>';
