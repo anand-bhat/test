@@ -1,0 +1,13 @@
+{
+  "industry": "Online Payments",
+  "organizations": [
+    {
+      "organization": "PayPal",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

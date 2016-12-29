@@ -1,0 +1,13 @@
+{
+  "industry": "Indian payment gateways",
+  "organizations": [
+    {
+      "organization": "Razorpay",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

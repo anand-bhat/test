@@ -1,0 +1,13 @@
+{
+  "industry": "Aerospace",
+  "organizations": [
+    {
+      "organization": "SpaceX",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

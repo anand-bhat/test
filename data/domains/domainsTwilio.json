@@ -1,0 +1,13 @@
+{
+  "industry": "Communications",
+  "organizations": [
+    {
+      "organization": "Twilio",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "industry": "Employment",
+  "organizations": [
+    {
+      "organization": "Freelancer",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "industry": "Dutch Banks",
+  "organizations": [
+    {
+      "organization": "Rabobank",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

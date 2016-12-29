@@ -1,0 +1,13 @@
+{
+  "industry": "Communications",
+  "organizations": [
+    {
+      "organization": "Silent Circle",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

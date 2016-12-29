@@ -1,0 +1,13 @@
+{
+  "industry": "Computer Software",
+  "organizations": [
+    {
+      "organization": "Github",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

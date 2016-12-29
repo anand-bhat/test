@@ -1,0 +1,13 @@
+{
+  "industry": "Indian Healthcare Providers",
+  "organizations": [
+    {
+      "organization": "Medi Assist India",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

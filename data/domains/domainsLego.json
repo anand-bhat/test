@@ -1,0 +1,13 @@
+{
+  "industry": "Entertainment",
+  "organizations": [
+    {
+      "organization": "Lego",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "industry": "Irish Banks",
+  "organizations": [
+    {
+      "organization": "Bank of Ireland",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}

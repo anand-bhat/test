@@ -1,0 +1,13 @@
+{
+  "industry": "Healthcare",
+  "organizations": [
+    {
+      "organization": "Practo",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}
