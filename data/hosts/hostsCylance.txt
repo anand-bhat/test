@@ -15,7 +15,6 @@ dellthreatdefense-eu.cylance.com
 dellthreatdefense.cylance.com
 download.cylance.com
 dt-login.cylance.com
-dt-my-vs0.cylance.com
 ev-api.cylance.com
 info.cylance.com
 inna.cylance.com

@@ -94,7 +94,6 @@ m.danskebank.dk
 m.danskebank.lt
 m.danskebank.se
 m.mobilepay.dk
-mail.danskebank.de
 mailin.danskebank.com
 mailrelay.danskebank.com
 mb.danskebank.dk
