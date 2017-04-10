@@ -510,12 +510,6 @@
         {
           "host": "sunnyvale.mytaxfiler.com",
           "issueReport": "https://github.com/anand-bhat/httpswatch/issues/131"
-        },
-        {
-          "host": "m.mytaxfiler.com",
-          "hostPurpose": "Mobile",
-          "httpsBehavior": "HTTP only",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/134"
         }
       ]
     },
