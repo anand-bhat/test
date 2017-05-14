@@ -4,7 +4,6 @@ cards.varonis.com
 central.varonis.com
 connect.varonis.com
 crm.varonis.com
-cs.varonis.com
 dn-il.varonis.com
 dn-us.varonis.com
 downloads.varonis.com

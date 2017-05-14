@@ -4,7 +4,6 @@ adminss.beta.ariba.com
 ads.ariba.com
 an32.ariba.com
 an33.ariba.com
-an38.ariba.com
 annuncioweb.ariba.com
 anqasun206.ariba.com
 ansmtp-ea.ariba.com
@@ -34,7 +33,6 @@ cabernet.ariba.com
 cds5.ariba.com
 cds6.ariba.com
 cepheus.ariba.com
-certan32.ariba.com
 certan33.ariba.com
 certs1-2-eu.ariba.com
 certs1-2-ru.ariba.com
@@ -72,12 +70,9 @@ custom.demo.ariba.com
 demeter.ariba.com
 demosapecc.demo.ariba.com
 demosapnw.demo.ariba.com
-demovip1.ariba.com
 devssp.ariba.com
 dgw-snv-inetgate.ariba.com
 download.ariba.com
-e0-0-c7200-snv-inetgate1.ariba.com
-e0-0-c7200-snv-inetgate2.ariba.com
 emeasales.demo.ariba.com
 esigservice.ariba.com
 eusmtp-ea.ariba.com
@@ -86,7 +81,6 @@ filereceiver.ariba.com
 ftp.ariba.com
 fxservices.ariba.com
 gbldell.ariba.com
-gblsun.ariba.com
 home.demo.ariba.com
 ibmwiki.ariba.com
 iptest.ariba.com
@@ -149,7 +143,6 @@ s1.ariba.com
 s1.beta.ariba.com
 s1.sales.ariba.com
 sales.ariba.com
-sandbox01.ariba.com
 sapp1.ariba.com
 saprouter-ext.ariba.com
 search.ariba.com
@@ -205,7 +198,6 @@ svclq2.ariba.com
 svclq6ss.ariba.com
 svcmachss.ariba.com
 svcmig2.ariba.com
-svcmigss.ariba.com
 svcqass.ariba.com
 svcrel.ariba.com
 svcsp.ariba.com
@@ -220,17 +212,14 @@ us-hqanitpush.ariba.com
 us-hqcert1.ariba.com
 us-hqcommvault.ariba.com
 us-hqeduweb.ariba.com
-us-hqextdns.ariba.com
 us-hqextdns1.ariba.com
 us-hqextm1.ariba.com
 us-hqextm2.ariba.com
-us-hqgwrk.ariba.com
 us-hqgwrkext.ariba.com
 us-hqonlearn.ariba.com
 us-hqsms1.ariba.com
 us-hquxcfg.ariba.com
 us-mtvdns1.ariba.com
-us-mtvveritas1.ariba.com
 us-pghdownload1.ariba.com
 us-pghrecord1.ariba.com
 ushqbidb.ariba.com

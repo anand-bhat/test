@@ -23,7 +23,6 @@ data.freelancer.com
 desktop.freelancer.com
 developer.freelancer.com
 dk.freelancer.com
-dpucdqmvft.this_is_research.next_query.is_from_us.if_problem.please_see.http.researchscan.cs.berkeley.edu.freelancer.com
 drsasapavlovic.freelancer.com
 edda.freelancer.com
 email.com.htmlwww.freelancer.com
@@ -57,7 +56,6 @@ mail006.use.t3.freelancer.com
 mail007.use.t3.freelancer.com
 mail1.warriorforum.com
 mail2.warriorforum.com
-mobile-feedback.freelancer.com
 mx1.support.freelancer.com
 mx2.support.freelancer.com
 my.freelancer.com
@@ -74,7 +72,6 @@ payments.warriorforum.com
 peter.freelancer.com
 pl.freelancer.com
 qmd1.freelancer.com
-r9dmpztdsq.this_is_research.next_query.is_from_us.if_problem.please_see.http.researchscan.cs.berkeley.edu.freelancer.com
 scavenger.freelancer.com
 se.freelancer.com
 sites.freelancer.com
@@ -118,7 +115,6 @@ www.data.freelancer.com
 www.desktop.freelancer.com
 www.developer.freelancer.com
 www.dk.freelancer.com
-www.dpucdqmvft.this_is_research.next_query.is_from_us.if_problem.please_see.http.researchscan.cs.berkeley.edu.freelancer.com
 www.drsasapavlovic.freelancer.com
 www.edda.freelancer.com
 www.email.com.htmlwww.freelancer.com
@@ -159,7 +155,6 @@ www.ox-i.freelancer.com
 www.peter.freelancer.com
 www.pl.freelancer.com
 www.qmd1.freelancer.com
-www.r9dmpztdsq.this_is_research.next_query.is_from_us.if_problem.please_see.http.researchscan.cs.berkeley.edu.freelancer.com
 www.scavenger.freelancer.com
 www.se.freelancer.com
 www.sites.freelancer.com

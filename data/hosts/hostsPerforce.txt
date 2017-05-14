@@ -2,8 +2,6 @@ answers.perforce.com
 blog.perforce.com
 cdist2.perforce.com
 certification.perforce.com
-cloud-d.perforce.com
-cloud-s.perforce.com
 cloud.perforce.com
 customer.perforce.com
 feedback.perforce.com
@@ -16,13 +14,8 @@ go.perforce.com
 helix.perforce.com
 helixprotects.perforce.com
 info.perforce.com
-jira.perforce.com
 kb.perforce.com
 maillist.perforce.com
-meetings.perforce.com
-mx2.perforce.com
-mx2a.perforce.com
-mx2c.perforce.com
 mx3.perforce.com
 mx3a.perforce.com
 mx3c.perforce.com
@@ -39,7 +32,6 @@ swarm.workshop.perforce.com
 training.perforce.com
 udc.perforce.com
 updates.perforce.com
-wayside.perforce.com
 wiki.workshop.perforce.com
 workshop.perforce.com
 www-dev.perforce.com
