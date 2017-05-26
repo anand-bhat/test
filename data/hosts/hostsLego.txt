@@ -118,7 +118,6 @@ shop-accept.webqa.lego.com
 shop-api.lego.com
 shop-redesign-sprintly.webqa.lego.com
 shop.education.lego.com
-shop.lb.lego.com
 shop.lego.com
 sip.lego.com
 sitecore.gslb.lego.com
