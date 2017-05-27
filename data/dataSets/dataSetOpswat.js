@@ -1,5 +1,5 @@
 var dataSet = [
-['', 'Opswat', 'citrix.opswat.com', '198.27.132.13', 'Could not connect', '2017-05-27', 'Unable to connect to the server', 'Computer Security', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
+['', 'Opswat', 'citrix.opswat.com', '198.27.132.13', 'No HTTPS', '2017-05-27', 'Unable to connect to the server', 'Computer Security', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Opswat', 'hash01.metadefender.com', '54.86.221.210', 'Could not connect', '2017-05-27', 'Unable to connect to the server', 'Computer Security', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Opswat', 'hash03.metadefender.com', '54.255.209.125', 'Could not connect', '2017-05-27', 'Unable to connect to the server', 'Computer Security', '?', '?', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'Opswat', 'files.opswat.com', '198.27.132.7', 'C', '2017-05-27', 'Ready', 'Computer Security', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', 'No'] ,
@@ -108,11 +108,11 @@ var chartDataSummary = [
 ['T/ A-', 8, 'color: Red'],
 ['T/ B', 2, 'color: Red'],
 ['F', 6, 'color: Red'],
-['No HTTPS', 2, 'color: Red'],
+['No HTTPS', 3, 'color: Red'],
 ['Scan error', 2, 'color: Gray'],
-['Could not connect', 12, 'color: Gray'],
+['Could not connect', 11, 'color: Gray'],
 ];
 var chartDataCountsByOrg = [
 ['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
-['Opswat', 2, 61, 1, null, 1, null, null, 11, 6, 2, 2, null],
+['Opswat', 2, 61, 1, null, 1, null, null, 11, 6, 3, 2, null],
 ];
