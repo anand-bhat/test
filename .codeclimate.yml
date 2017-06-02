@@ -25,7 +25,6 @@ ratings:
   - "**.js"
   - "**.md"
   - "**.py"
-  - "**.html"
 
 exclude_paths:
 - "data/"
