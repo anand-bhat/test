@@ -234,8 +234,7 @@ $(document).ready(function () {
 			{type: 'enumgrade', targets: 4},
 			{visible: false, targets: [0, 5, 6, 7, 8, 9, 10]}
 		],
-		//data: dataSet,
-		ajax: '../assets/data/dataSetIndianPaymentServices.json',
+		data: dataSet,
 		deferRender: true,
 		fixedHeader: { footer: true, header: true },
 		initComplete: function () {
