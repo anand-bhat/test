@@ -56,7 +56,7 @@ table.dataTable thead th {
 .cell-border1 th:first-child {
 	border-left: 1px solid #ddd;
 }
-.cell-border td {
+.cell-border1 td {
 	border-left: 1px solid #0000FF;
 	border-bottom: 1px solid #00FF00;
 	border-right: 1px solid #FF0000;
