@@ -10,7 +10,7 @@ td.details-control {
 .shown td.details-control {
 	background: url('../images/details_close.png') no-repeat center center;
 }
-table.dataTable tfoot th {
+table.dataTable tfoot td {
 	padding: 5px;
 }
 table.dataTable thead th {
@@ -53,7 +53,7 @@ table.dataTable thead th {
 	border-right: 1px solid #ddd;
 	border-top: 1px solid #ddd;
 }
-.cell-border td:first-child {
+.cell-border th:first-child td:first-child {
 	border-left: 1px solid #ddd;
 }
 .cell-border {
