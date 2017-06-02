@@ -49,12 +49,15 @@ table.dataTable thead th {
 .center {
 	text-align: center;
 }
-.cell-border thead th, tfoot td  {
+.cell-border thead th, tfoot td {
 	border-right: 1px solid #ddd;
 	border-top: 1px solid #ddd;
 }
 .cell-border thead th:first-child, tfoot td:first-child {
 	border-left: 1px solid #ddd;
+}
+.cell-border tfoot td {
+	border-bottom: 1px solid #ddd;
 }
 .strikethrough {
 	text-decoration: line-through;
