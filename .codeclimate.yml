@@ -5,8 +5,7 @@ engines:
     enabled: true
     config:
       languages:
-      - php:
-      - ruby:
+        javascript:
         python:
           python_version: 3
   eslint:
