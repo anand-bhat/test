@@ -53,7 +53,7 @@ table.dataTable thead th {
 	border-right: 1px solid #ddd;
 	border-top: 1px solid #ddd;
 }
-.cell-border th:first-child {
+.cell-border td:first-child {
 	border-left: 1px solid #ddd;
 }
 .cell-border {
