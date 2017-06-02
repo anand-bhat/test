@@ -31,3 +31,4 @@ exclude_paths:
 - "data/"
 - "docs/_includes/JB/"
 - "docs/assets/data/"
+- "scripts/ssllabs-scan-v3.go"
