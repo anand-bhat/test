@@ -1,2 +1,31 @@
+engines:
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - php:
+      - ruby:
+        python:
+          python_version: 3
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  markdownlint:
+    enabled: true
+  pep8:
+    enabled: true
+  radon: 
+    enabled: true
+
+ratings:
+  paths:
+  - "**.css"
+  - "**.js"
+  - "**.md"
+  - "**.py"
+
 exclude_paths:
 - "data/"
