@@ -479,10 +479,10 @@
           "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS does not show same content as HTTP"
         },
         {
-          "host": "ns1.retailpharmaindia.com",
+          "host": "ns1.retailpharmaindia.com"
         },
         {
-          "host": "ns2.retailpharmaindia.com",
+          "host": "ns2.retailpharmaindia.com"
         }
       ]
     },

@@ -1,9 +1,0 @@
-accounts.silentcircle.com
-blog.silentcircle.com
-business.silentcircle.com
-home.silentcircle.com
-phone.silentcircle.com
-silentcircle.com
-stats.silentcircle.com
-support.silentcircle.com
-www.silentcircle.com

@@ -579,7 +579,8 @@
         },
         {
           "host": "content.quicko.com",
-          "httpsBehavior": "HTTP redirected to HTTPS"
+          "httpsBehavior": "HTTP redirected to HTTPS",
+          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/145"
         },
         {
           "host": "drive.quicko.com"
