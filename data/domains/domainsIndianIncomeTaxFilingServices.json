@@ -521,7 +521,8 @@
           "issueReport": "https://github.com/anand-bhat/httpswatch/issues/127"
         },
         {
-          "host": "newjersey.mytaxfiler.com"
+          "host": "newjersey.mytaxfiler.com",
+          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/148"
         },
         {
           "host": "stg.login.mytaxfiler.com",
