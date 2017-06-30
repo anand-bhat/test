@@ -212,13 +212,13 @@ $(document).ready(function () {
 					var cellClass;
 					switch (data) {
 					case 'Yes':
-						cellClass = 'center badhighlight';
+						cellClass = 'badhighlight';
 						break;
 					case 'No':
-						cellClass = 'center good';
+						cellClass = 'good';
 						break;
 					default:
-						cellClass = 'center';
+						cellClass = '';
 					}
 					return '<div class="' + cellClass + '">' + data + '</div>';
 				},
@@ -281,8 +281,8 @@ $(document).ready(function () {
 			});
 		},
 		language: {
-			search: '<i class=\"fa fa-search\"></i>',
-			searchPlaceholder: "Search"
+			search: '',
+			searchPlaceholder: 'Search'
 		},
 		lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, 'All']],
 		order: [[1, 'asc'], [2, 'asc'], [3, 'asc']]
