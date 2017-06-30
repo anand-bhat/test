@@ -3,6 +3,9 @@ body {
 	margin-left: 10px;
 	margin-right: 10px;
 }
+label {
+	font-weight: normal;
+}
 td.details-control {
 	background: url('../images/details_open.png') no-repeat center center;
 	cursor: pointer;
