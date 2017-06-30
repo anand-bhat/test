@@ -281,7 +281,7 @@ $(document).ready(function () {
 			});
 		},
 		language: {
-			search: '',
+			search: 'span class="glyphicon glyphicon-search"></span>',
 			searchPlaceholder: 'Search'
 		},
 		lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, 'All']],
