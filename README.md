@@ -24,6 +24,6 @@ The code (and content) for the site rests within the `/docs` folder.
 | Name      | Version | Website |
 | ----------- | ---- | ----------- |
 | Python | 3.6.1 | https://www.python.org/|
-| Go | 1.8.2 | https://golang.org |
+| Go | 1.8.3 | https://golang.org |
 | Official SSL Labs server test Go script (ssllabs-scan) | 1.5.0 | https://github.com/ssllabs/ssllabs-scan/tree/master |
 | Sublist3r | 1.0 | https://github.com/aboul3la/Sublist3r |
