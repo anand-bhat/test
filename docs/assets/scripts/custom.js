@@ -1,3 +1,42 @@
+Chart.pluginService.register({
+    beforeInit: function(chartInstance) {
+        var totals = [];
+        chartInstance.data.datasets.forEach(function(dataset) {
+            for (var i = 0; i < dataset.data.length; i++) {
+                var total = 0;
+                chartInstance.data.datasets.forEach(function(dataset) {
+                    total += dataset.data[i];
+                });
+                totals.push(total);
+            }
+        });
+
+        chartInstance.data.datasets.forEach(function(dataset) {
+            for (var i = 0; i < dataset.data.length; i++) {
+                dataset.data[i] = '' + (dataset.data[i] / totals[i]) * 100;
+            }
+        });
+    }/*,
+    afterDraw: function(chartInstance) {
+        var ctx = chartInstance.chart.ctx;
+
+        ctx.font = Chart.helpers.fontString(14, 'bold', Chart.defaults.global.defaultFontFamily);
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        ctx.fillStyle = '#666';
+
+        chartInstance.data.datasets.forEach(function(dataset) {
+            if (dataset._meta[0].controller.index != 0) return;
+
+            for (var i = 0; i < dataset.data.length; i++) {
+                var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+
+                ctx.fillText(parseFloat(dataset.data[i]).toFixed(2) + "%", ((model.base + model.x) / 2), (model.y + model.height / 3));
+            }
+        });
+    }*/
+});
+
 // Formatting function for row details
 function format(row) {
 	'use strict';
@@ -94,6 +133,37 @@ function drawChartCountsByOrg() {
 
 	var chart = new google.visualization.BarChart(document.getElementById('chartCountsByOrg'));
 	chart.draw(data, options);
+}
+
+function drawChartCounts2ByOrg() {
+	'use strict';
+	if ((typeof chartDataCounts2ByOrg === 'undefined') ||(typeof Chart === 'undefined')) {
+		return;
+	}
+
+	var options = {
+    scales: {
+        xAxes: [{
+            stacked: true,
+            ticks: {
+                max: 100
+            }
+        }],
+        yAxes: [{
+            stacked: true
+        }]
+    },
+    tooltips: {
+        enabled: true
+    }
+};
+
+var ctxBarChart = document.getElementById("chartCounts2ByOrg");
+var priceBarChart = new Chart(ctxBarChart, {
+    type: 'horizontalBar',
+    data: chartDataCounts2ByOrg,
+    options: options
+});
 }
 
 // Sort function for SSL Grade to show A+ first
