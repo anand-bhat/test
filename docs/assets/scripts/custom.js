@@ -416,6 +416,19 @@ $(document).ready(function () {
 		}
 	});
 
+	// Toggle chart section visibility
+	$('#toggleChartCounts2ByOrg').on('click', function (e) {
+		e.preventDefault();
+		if ($('#chartCounts2ByOrg').is(':visible')) {
+			$('#chartCounts2ByOrg').hide();
+			$(this).text('[show section]');
+		}
+		else {
+			$('#chartCounts2ByOrg').show();
+			$(this).text('[hide section]');
+		}
+	});
+
 	// If the datatable with HTTPS data is searched, sync it to the URL hash
 	$('#httpsdata').on('search.dt', function(e, settings) {
 		e.preventDefault();
