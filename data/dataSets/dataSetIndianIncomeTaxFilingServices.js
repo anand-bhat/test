@@ -248,7 +248,7 @@ labels: ['Chaireturn', 'ClearTax', 'H&R Block India', 'HamaraTax', 'Income Tax D
 datasets: [
 {
     label: 'A+',
-    backgroundColor: 'rgba(0, 80, 0, 0.5)',
+    backgroundColor: 'rgba(0, 80, 0, 0.75)',
     hoverBackgroundColor: 'rgba(0, 80, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -256,7 +256,7 @@ datasets: [
 },
 {
     label: 'A',
-    backgroundColor: 'rgba(154, 205, 50, 0.5)',
+    backgroundColor: 'rgba(154, 205, 50, 0.75)',
     hoverBackgroundColor: 'rgba(154, 205, 50, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -264,7 +264,7 @@ datasets: [
 },
 {
     label: 'A-',
-    backgroundColor: 'rgba(144, 238, 144, 0.5)',
+    backgroundColor: 'rgba(144, 238, 144, 0.75)',
     hoverBackgroundColor: 'rgba(144, 238, 144, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -272,7 +272,7 @@ datasets: [
 },
 {
     label: 'B',
-    backgroundColor: 'rgba(255, 165, 0, 0.5)',
+    backgroundColor: 'rgba(255, 165, 0, 0.75)',
     hoverBackgroundColor: 'rgba(255, 165, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -280,7 +280,7 @@ datasets: [
 },
 {
     label: 'C',
-    backgroundColor: 'rgba(255, 165, 0, 0.5)',
+    backgroundColor: 'rgba(255, 165, 0, 0.75)',
     hoverBackgroundColor: 'rgba(255, 165, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -288,7 +288,7 @@ datasets: [
 },
 {
     label: 'D',
-    backgroundColor: 'rgba(255, 165, 0, 0.5)',
+    backgroundColor: 'rgba(255, 165, 0, 0.75)',
     hoverBackgroundColor: 'rgba(255, 165, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -296,7 +296,7 @@ datasets: [
 },
 {
     label: 'E',
-    backgroundColor: 'rgba(255, 165, 0, 0.5)',
+    backgroundColor: 'rgba(255, 165, 0, 0.75)',
     hoverBackgroundColor: 'rgba(255, 165, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -304,7 +304,7 @@ datasets: [
 },
 {
     label: 'T',
-    backgroundColor: 'rgba(255, 0, 0, 0.5)',
+    backgroundColor: 'rgba(255, 0, 0, 0.75)',
     hoverBackgroundColor: 'rgba(255, 0, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -312,7 +312,7 @@ datasets: [
 },
 {
     label: 'F',
-    backgroundColor: 'rgba(255, 0, 0, 0.5)',
+    backgroundColor: 'rgba(255, 0, 0, 0.75)',
     hoverBackgroundColor: 'rgba(255, 0, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -320,7 +320,7 @@ datasets: [
 },
 {
     label: 'No HTTPS',
-    backgroundColor: 'rgba(255, 0, 0, 0.5)',
+    backgroundColor: 'rgba(255, 0, 0, 0.75)',
     hoverBackgroundColor: 'rgba(255, 0, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -328,7 +328,7 @@ datasets: [
 },
 {
     label: 'Scan error',
-    backgroundColor: 'rgba(128, 128, 128, 0.5)',
+    backgroundColor: 'rgba(128, 128, 128, 0.75)',
     hoverBackgroundColor: 'rgba(128, 128, 128, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -336,7 +336,7 @@ datasets: [
 },
 {
     label: 'Not scanned',
-    backgroundColor: 'rgba(128, 128, 128, 0.5)',
+    backgroundColor: 'rgba(128, 128, 128, 0.75)',
     hoverBackgroundColor: 'rgba(128, 128, 128, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',

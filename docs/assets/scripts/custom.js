@@ -395,11 +395,11 @@ $(document).ready(function () {
 		e.preventDefault();
 		if ($('#toggleColumnsSection').is(':visible')) {
 			$('#toggleColumnsSection').hide();
-			$(this).text('[show section]');
+			$(this).text('[show]');
 		}
 		else {
 			$('#toggleColumnsSection').show();
-			$(this).text('[hide section]');
+			$(this).text('[hide]');
 		}
 	});
 
@@ -408,11 +408,11 @@ $(document).ready(function () {
 		e.preventDefault();
 		if ($('#chartCountsByOrg').is(':visible')) {
 			$('#chartCountsByOrg').hide();
-			$(this).text('[show section]');
+			$(this).text('[show]');
 		}
 		else {
 			$('#chartCountsByOrg').show();
-			$(this).text('[hide section]');
+			$(this).text('[hide]');
 		}
 	});
 
@@ -421,11 +421,11 @@ $(document).ready(function () {
 		e.preventDefault();
 		if ($('#chartCounts2ByOrg').is(':visible')) {
 			$('#chartCounts2ByOrg').hide();
-			$(this).text('[show section]');
+			$(this).text('[show]');
 		}
 		else {
 			$('#chartCounts2ByOrg').show();
-			$(this).text('[hide section]');
+			$(this).text('[hide]');
 		}
 	});
 
