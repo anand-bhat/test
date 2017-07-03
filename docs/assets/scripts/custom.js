@@ -34,29 +34,6 @@ Chart.pluginService.register({
     }
 });
 
-/*
-Chart.pluginService.register({
-    beforeInit: function(chartInstance) {
-        var totals = [];
-        chartInstance.data.datasets.forEach(function(dataset) {
-            for (var i = 0; i < dataset.data.length; i++) {
-                var total = 0;
-                chartInstance.data.datasets.forEach(function(dataset) {
-                    total += dataset.data[i];
-                });
-                totals.push(total);
-            }
-        });
-
-        chartInstance.data.datasets.forEach(function(dataset) {
-            for (var i = 0; i < dataset.data.length; i++) {
-                dataset.data[i] = '' + (dataset.data[i] / totals[i]) * 100;
-            }
-        });
-    }
-});
-*/
-
 // Formatting function for row details
 function format(row) {
 	'use strict';
@@ -178,7 +155,7 @@ function drawChartCounts2ByOrg() {
     }
 };
 
-var ctxBarChart = document.getElementById("chartCounts2ByOrg");
+var ctxBarChart = document.getElementById("chartCounts2ByOrgCanvas");
 var priceBarChart = new Chart(ctxBarChart, {
     type: 'horizontalBar',
     data: chartDataCounts2ByOrg,
