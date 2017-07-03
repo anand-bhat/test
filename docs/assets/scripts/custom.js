@@ -1,11 +1,5 @@
-
-(function(Chart) {
-  var Stacked100Plugin = {
-    id: 'stacked100',
-
+Chart.pluginService.register({
     beforeInit: function(chartInstance, pluginOptions) {
-      if (!pluginOptions.enable) return;
-
       var xAxes = chartInstance.options.scales.xAxes;
       var yAxes = chartInstance.options.scales.yAxes;
 
@@ -25,8 +19,6 @@
     },
 
     beforeUpdate: function(chartInstance, pluginOptions) {
-      if (!pluginOptions.enable) return;
-
       var datasets = chartInstance.data.datasets;
       var allData = datasets.map(function(dataset) { return dataset.data });
       chartInstance.data.originalData = allData;
@@ -39,11 +31,8 @@
           return Math.round(val * 1000 / totals[i]) / 10;
         });
       });
-    }
-  };
-
-  Chart.pluginService.register(Stacked100Plugin);
-}).call(this, Chart);
+    };
+});
 
 /*
 Chart.pluginService.register({
