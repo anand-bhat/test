@@ -31,7 +31,7 @@ Chart.pluginService.register({
           return Math.round(val * 1000 / totals[i]) / 10;
         });
       });
-    };
+    }
 });
 
 /*
