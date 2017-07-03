@@ -1,3 +1,51 @@
+
+(function(Chart) {
+  var Stacked100Plugin = {
+    id: 'stacked100',
+
+    beforeInit: function(chartInstance, pluginOptions) {
+      if (!pluginOptions.enable) return;
+
+      var xAxes = chartInstance.options.scales.xAxes;
+      var yAxes = chartInstance.options.scales.yAxes;
+
+      [xAxes, yAxes].forEach(function(axes) {
+        axes.forEach(function(hash) { hash.stacked = true });
+      })
+      xAxes.forEach(function(hash) { hash.ticks.min = 0; hash.ticks.max = 100 });
+
+      chartInstance.options.tooltips.callbacks.label = function(tooltipItem, data) {
+        var datasetIndex = tooltipItem.datasetIndex,
+          index = tooltipItem.index,
+          xLabel = tooltipItem.xLabel;
+        var datasetLabel = data.datasets[datasetIndex].label || '';
+
+        return '' + datasetLabel + ': ' + xLabel + '% (' + data.originalData[datasetIndex][index] + ')';
+      };
+    },
+
+    beforeUpdate: function(chartInstance, pluginOptions) {
+      if (!pluginOptions.enable) return;
+
+      var datasets = chartInstance.data.datasets;
+      var allData = datasets.map(function(dataset) { return dataset.data });
+      chartInstance.data.originalData = allData;
+
+      var totals = Array.apply(null, new Array(allData[0].length)).map(function(el, i) {
+        return allData.reduce(function(sum, data) { return sum + data[i] }, 0);
+      });
+      datasets.forEach(function(dataset) {
+        dataset.data = dataset.data.map(function(val, i) {
+          return Math.round(val * 1000 / totals[i]) / 10;
+        });
+      });
+    }
+  };
+
+  Chart.pluginService.register(Stacked100Plugin);
+}).call(this, Chart);
+
+/*
 Chart.pluginService.register({
     beforeInit: function(chartInstance) {
         var totals = [];
@@ -16,26 +64,9 @@ Chart.pluginService.register({
                 dataset.data[i] = '' + (dataset.data[i] / totals[i]) * 100;
             }
         });
-    }/*,
-    afterDraw: function(chartInstance) {
-        var ctx = chartInstance.chart.ctx;
-
-        ctx.font = Chart.helpers.fontString(14, 'bold', Chart.defaults.global.defaultFontFamily);
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'bottom';
-        ctx.fillStyle = '#666';
-
-        chartInstance.data.datasets.forEach(function(dataset) {
-            if (dataset._meta[0].controller.index != 0) return;
-
-            for (var i = 0; i < dataset.data.length; i++) {
-                var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
-
-                ctx.fillText(parseFloat(dataset.data[i]).toFixed(2) + "%", ((model.base + model.x) / 2), (model.y + model.height / 3));
-            }
-        });
-    }*/
+    }
 });
+/*
 
 // Formatting function for row details
 function format(row) {
