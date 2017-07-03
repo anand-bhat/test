@@ -137,9 +137,9 @@ function drawChartCountsByOrg() {
 
 function drawChartCounts2ByOrg() {
 	'use strict';
-	//if ((typeof chartDataCounts2ByOrg === 'undefined') ||(typeof Chart === 'undefined')) {
-	//	return;
-	//}
+	if ((typeof chartDataCounts2ByOrg === 'undefined') ||(typeof Chart === 'undefined')) {
+		return;
+	}
 
 	var options = {
     scales: {
@@ -440,10 +440,12 @@ $(document).ready(function () {
 		}
 	});
 
-	if (typeof google === 'undefined') {
-		return;
+	if (typeof google !== 'undefined') {
+		google.charts.load('current', {packages: ['corechart']});
+		google.charts.setOnLoadCallback(drawChartCountsByOrg);
 	}
-	google.charts.load('current', {packages: ['corechart']});
-	google.charts.setOnLoadCallback(drawChartCountsByOrg);
-	drawChartCounts2ByOrg();
+
+	if (typeof Chart !== 'undefined') {
+		drawChartCounts2ByOrg();
+	}
 });
