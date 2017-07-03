@@ -55,7 +55,7 @@ Chart.pluginService.register({
         });
     }
 });
-/*
+*/
 
 // Formatting function for row details
 function format(row) {
