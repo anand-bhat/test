@@ -137,9 +137,9 @@ function drawChartCountsByOrg() {
 
 function drawChartCounts2ByOrg() {
 	'use strict';
-	if ((typeof chartDataCounts2ByOrg === 'undefined') ||(typeof Chart === 'undefined')) {
-		return;
-	}
+	//if ((typeof chartDataCounts2ByOrg === 'undefined') ||(typeof Chart === 'undefined')) {
+	//	return;
+	//}
 
 	var options = {
     scales: {
