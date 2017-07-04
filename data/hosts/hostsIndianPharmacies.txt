@@ -65,11 +65,11 @@ mobile.mchemist.com
 myramed.in
 netmeds.com
 notify.netmeds.com
-ns.2buydrug.in
 ns1.buydrug.in
 ns1.indiameds.in
 ns1.retailpharmaindia.com
 ns1.savemymeds.com
+ns2.buydrug.in
 ns2.indiameds.in
 ns2.retailpharmaindia.com
 ns2.savemymeds.com
