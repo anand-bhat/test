@@ -15,7 +15,7 @@ Chart.pluginService.register({
 				xLabel = tooltipItem.xLabel;
 			var datasetLabel = data.datasets[datasetIndex].label || '';
 
-			return '' + datasetLabel + ': ' + xLabel + '% (' + chartInstance.data.originalData[datasetIndex][index] + ')';
+			return '' + datasetLabel + ': ' + xLabel + '% (' + data.originalData[datasetIndex][index] + ')';
 		};
 	},
 
