@@ -347,14 +347,14 @@ $(document).ready(function () {
 	});
 
 	// Toggle chart section visibility
-	$('#toggleChartCountsByOrg').on('click', function (e) {
+	$('#toggleChartCountsByOrgAndGrade').on('click', function (e) {
 		e.preventDefault();
-		if ($('#chartCountsByOrg').is(':visible')) {
-			$('#chartCountsByOrg').hide();
+		if ($('#chartCountsByOrgAndGrade').is(':visible')) {
+			$('#chartCountsByOrgAndGrade').hide();
 			$(this).text('[show]');
 		}
 		else {
-			$('#chartCountsByOrg').show();
+			$('#chartCountsByOrgAndGrade').show();
 			$(this).text('[hide]');
 		}
 	});
