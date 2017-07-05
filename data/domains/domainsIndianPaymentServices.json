@@ -1689,9 +1689,6 @@
           "host": "buservice.saas.paytm.com"
         },
         {
-          "host": "c.paytm.com"
-        },
-        {
           "host": "cart.paytm.com"
         },
         {
@@ -1717,9 +1714,6 @@
         },
         {
           "host": "cdn5.paytm.com"
-        },
-        {
-          "host": "chat-staging.paytm.com"
         },
         {
           "host": "chat2-paywith.paytm.com"
@@ -2154,9 +2148,6 @@
           "host": "test.wallet.payu.com"
         },
         {
-          "host": "b.test.wallet.payu.com"
-        },
-        {
           "host": "payubiz.in"
         },
         {
@@ -2439,9 +2430,6 @@
           "host": "mos.payu.in"
         },
         {
-          "host": "ms.payu.in"
-        },
-        {
           "host": "partner.payu.in"
         },
         {
@@ -2560,9 +2548,6 @@
         },
         {
           "host": "email.razorpay.com"
-        },
-        {
-          "host": "events.razorpay.com"
         },
         {
           "host": "ifsc.razorpay.com"
