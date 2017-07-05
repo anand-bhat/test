@@ -1140,7 +1140,7 @@ var chartDataCountsByOrg = [
 ['airpay', null, 14, null, 5, null, null, null, 3, null, null, null, null],
 ['ngpay', null, null, null, null, null, null, null, null, null, 2, null, null],
 ];
-var chartDataCountsByOrgOrgAndGrade = {
+var chartDataCountsByOrgAndGrade = {
 labels: ['Atom Technologies', 'CCAvenue', 'Citrus Pay', 'DirecPay', 'EBS', 'FreeCharge', 'Instamojo', 'Juspay', 'LazyPay', 'MobiKwik', 'Pay1', 'PayU', 'PayZippy', 'Paytm', 'Razorpay', 'Talkcharge', 'Zaakpay', 'airpay', 'ngpay'],
 datasets: [
 {

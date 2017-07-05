@@ -983,7 +983,7 @@ var chartDataCountsByOrg = [
 ['Tamilnad Mercantile Bank Ltd.', null, 9, null, null, null, null, null, 1, null, 7, null, null],
 ['Yes Bank', null, null, 3, null, 7, null, null, null, 1, 5, 1, null],
 ];
-var chartDataCountsByOrgOrgAndGrade = {
+var chartDataCountsByOrgAndGrade = {
 labels: ['Axis Bank', 'Bandhan Bank', 'Catholic Syrian Bank Ltd.', 'City Union Bank Ltd.', 'DCB Bank Ltd.', 'Dhanlaxmi Bank Ltd.', 'Federal Bank Ltd.', 'HDFC Bank Ltd.', 'ICICI Bank', 'IDFC Bank Ltd.', 'ING Vysya Bank', 'IndusInd Bank Ltd.', 'Jammu & Kashmir Bank Ltd.', 'Karnataka Bank', 'Karur Vysya Bank Ltd.', 'Kotak Mahindra Bank Ltd.', 'Lakshmi Vilas Bank Ltd', 'Nainital Bank Ltd.', 'Ratnakar Bank', 'South Indian Bank', 'Tamilnad Mercantile Bank Ltd.', 'Yes Bank'],
 datasets: [
 {

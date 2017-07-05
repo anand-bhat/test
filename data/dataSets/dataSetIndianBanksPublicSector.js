@@ -671,7 +671,7 @@ var chartDataCountsByOrg = [
 ['United Bank of India', null, null, null, 1, null, null, null, 5, 2, null, null, null],
 ['Vijaya Bank', null, null, null, 2, 8, null, null, 1, null, null, null, 1],
 ];
-var chartDataCountsByOrgOrgAndGrade = {
+var chartDataCountsByOrgAndGrade = {
 labels: ['Allahabad Bank', 'Andhra Bank', 'Bank of Baroda', 'Bank of India', 'Bank of Maharashtra', 'Bharatiya Mahila Bank', 'Canara Bank', 'Central Bank of India', 'Corporation Bank', 'Dena Bank', 'IDBI Bank', 'Indian Bank', 'Indian Overseas Bank', 'Oriental Bank of Commerce', 'Punjab & Sind Bank', 'Punjab National Bank', 'State Bank of Bikaner & Jaipur', 'State Bank of Hyderabad', 'State Bank of India', 'State Bank of Mysore', 'State Bank of Patiala', 'State Bank of Travancore', 'Syndicate Bank', 'UCO Bank', 'Union Bank of India', 'United Bank of India', 'Vijaya Bank'],
 datasets: [
 {

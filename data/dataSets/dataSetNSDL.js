@@ -101,7 +101,7 @@ var chartDataCountsByOrg = [
 ['Organization', {label: 'A+', type: 'number'}, {label: 'A', type: 'number'}, {label: 'A-', type: 'number'}, {label: 'B', type: 'number'}, {label: 'C', type: 'number'}, {label: 'D', type: 'number'}, {label: 'E', type: 'number'}, {label: 'T', type: 'number'}, {label: 'F', type: 'number'}, {label: 'No HTTPS', type: 'number'}, {label: 'Scan error', type: 'number'}, {label: 'Not scanned', type: 'number'}],
 ['NSDL', null, 2, 4, 18, 8, null, null, 9, 15, 2, null, null],
 ];
-var chartDataCountsByOrgOrgAndGrade = {
+var chartDataCountsByOrgAndGrade = {
 labels: ['NSDL'],
 datasets: [
 {

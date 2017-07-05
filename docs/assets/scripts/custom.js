@@ -82,7 +82,7 @@ var gradesNotRequiringReport = ['A', 'A-', 'A+', 'Could not connect', 'Scan erro
 
 function drawChartCountsByOrgAndGrade() {
 	'use strict';
-	if ((typeof chartDataCounts2ByOrgAndGrade === 'undefined') ||(typeof Chart === 'undefined')) {
+	if ((typeof chartDataCountsByOrgAndGrade === 'undefined') ||(typeof Chart === 'undefined')) {
 		return;
 	}
 
@@ -104,7 +104,7 @@ function drawChartCountsByOrgAndGrade() {
 	var chartCountsByOrgAndGradeCanvas = document.getElementById("chartCountsByOrgAndGradeCanvas");
 	var priceBarChart = new Chart(chartCountsByOrgAndGradeCanvas, {
 		type: 'horizontalBar',
-		data: chartDataCounts2ByOrgAndGrade,
+		data: chartDataCountsByOrgAndGrade,
 		options: options
 	});
 }

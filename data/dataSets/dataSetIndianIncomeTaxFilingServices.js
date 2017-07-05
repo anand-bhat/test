@@ -268,7 +268,7 @@ var chartDataCountsByOrg = [
 ['efiler', null, null, null, null, 2, null, null, null, null, null, null, null],
 ['myITreturn', null, 7, null, null, null, null, null, 26, null, 5, null, null],
 ];
-var chartDataCountsByOrgOrgAndGrade = {
+var chartDataCountsByOrgAndGrade = {
 labels: ['Chaireturn', 'ClearTax', 'H&R Block India', 'HamaraTax', 'Income Tax Department, Government of India', 'Make My Returns', 'MyTaxCafe', 'Mytaxfiler', 'Quicko', 'Tax Care India', 'Tax Chanakya', 'Tax Manager', 'TaxRaahi', 'TaxSpanner', 'TaxZippy', 'Taxmantra', 'Taxshax', 'Taxsmile', 'VitteTax', 'efiler', 'myITreturn'],
 datasets: [
 {

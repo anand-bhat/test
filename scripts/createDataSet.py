@@ -151,7 +151,7 @@ def printChartDataCountsByOrg(table):
 
 
 def printChartDataCountsByOrgAndGrade(table):
-    print('var chartDataCountsByOrgOrgAndGrade = {')
+    print('var chartDataCountsByOrgAndGrade = {')
     print('labels: [\'{0}\']'.
           format('\', \''.join(str(i) for i in sorted(table.keys()))) + ',')
     print('datasets: [')

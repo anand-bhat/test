@@ -231,7 +231,7 @@ var chartDataCountsByOrg = [
 ['Zigy', null, 1, null, null, null, null, null, 1, null, 1, null, null],
 ['mChemist', null, null, 3, null, null, null, null, null, null, null, null, null],
 ];
-var chartDataCountsByOrgOrgAndGrade = {
+var chartDataCountsByOrgAndGrade = {
 labels: ['1mg', 'Apollo Pharmacy', 'Buydrug', 'Dawaaii.com', 'EasyMedico', 'India Meds', 'Madhu Online Pharmacy', 'MedPlus Mart', 'Medidart', 'Medideal.in', 'Medixpress', 'Myra Medicines', 'NetMeds', 'PharmEasy', 'Practo', 'Retail Pharma India', 'RiteCure', 'RxMedikart', 'SaveMyMeds', 'SaveOnMedicals', 'Zigy', 'mChemist'],
 datasets: [
 {
