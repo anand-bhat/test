@@ -194,7 +194,7 @@ $(document).ready(function () {
 					if (type !== 'display') {
 						return data;
 					}
-					return '<div class="grade ' + (gradeClass[data] || 'grade-red') + '"><a target="_blank" class="white" href="https://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on">' + data + '</a></div>';
+					return '<div class="grade ' + (gradeClass[data] || 'grade-red') + '"><a class="white" href="https://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on" rel="noopener" target="_blank">' + data + '</a></div>';
 				},
 				targets: 4
 			},
