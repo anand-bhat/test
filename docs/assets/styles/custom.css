@@ -46,11 +46,11 @@ table.dataTable thead th {
 	color: YellowGreen;
 }
 .badhighlight {
-	background-color: rgba(255, 0, 0, 0.9);
+	background-color: rgba(255, 0, 0, 0.5);
 	color: White;
 	font-weight: bold;
 }
-.badhighlight div:hover {
+.badhighlight:hover {
 	background-color: rgba(255, 0, 0, 1);
 	color: White;
 	font-weight: bold;
