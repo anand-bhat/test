@@ -38,7 +38,7 @@ Chart.pluginService.register({
 // Formatting function for row details
 function format(row) {
 	'use strict';
-	return '<table><tr><td>SSL Labs report: <a target="_blank" href="https://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on">' + row[2] + '</a></td></tr></table>';
+	return '<table><tr><td>SSL Labs report: <a href="https://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on" rel="noopener" target="_blank">' + row[2] + '</a></td></tr></table>';
 }
 
 var gradeRank = {
