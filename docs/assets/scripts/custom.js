@@ -212,7 +212,7 @@ $(document).ready(function () {
 					if ($.inArray(row[4], gradesNotRequiringReport) !== -1) {
 						return data;
 					}
-					return '<a target="_blank" href="https://github.com/anand-bhat/httpswatch/issues/new">Create</a>';
+					return '<a href="https://github.com/anand-bhat/httpswatch/issues/new" rel="noopener" target="_blank">Create</a>';
 				},
 				targets: 10
 			},
