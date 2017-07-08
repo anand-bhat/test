@@ -35,14 +35,14 @@ var dataSet = [
 ['', 'Medixpress', 'mail.medixpres.com', '106.187.43.152', 'No HTTPS', '2017-07-03', 'Unable to connect to the server', 'Indian pharmacies', '?', 'HTTP only', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'SaveMyMeds', 'm.savemymeds.com', '62.210.211.60', 'T/ B', '2017-07-03', 'Ready', 'Indian pharmacies', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'Yes', 'No'] ,
 ['', 'Zigy', 'mail1.zigy.com', '52.74.98.167', 'Could not connect', '2017-07-03', 'Unable to connect to the server', 'Indian pharmacies', '?', 'Unable to connect over HTTP and HTTPS', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
-['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.90.67', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.90.249', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.90.88', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.90.63', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.90.15', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.90.92', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.90.231', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
-['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.90.129', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
+['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.70.67', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
+['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.70.249', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
+['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.70.88', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
+['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.70.63', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
+['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.70.15', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
+['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.70.72', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
+['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.70.231', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
+['', 'SaveOnMedicals', 'cdn.saveonmedicals.com', '54.230.70.129', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', 'CDN', 'HTTP does not redirect to HTTPS; HTTPS works', 'https://github.com/anand-bhat/httpswatch/issues/79', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
 ['', 'Zigy', 'mail2.zigy.com', '52.74.242.71', 'Could not connect', '2017-07-03', 'Unable to connect to the server', 'Indian pharmacies', '?', 'Unable to connect over HTTP and HTTPS', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'] ,
 ['', 'RiteCure', 'mail.ritecure.com', '174.127.119.32', 'T/ A-', '2017-07-03', 'Ready', 'Indian pharmacies', 'Home page', 'HTTP does not redirect to HTTPS; HTTPS does not show same content as HTTP', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No'] ,
 ['', 'SaveOnMedicals', 'm.saveonmedicals.com', '52.66.72.8', 'A', '2017-07-03', 'Ready', 'Indian pharmacies', '?', '?', '-', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No'] ,
@@ -236,7 +236,7 @@ labels: ['1mg', 'Apollo Pharmacy', 'Buydrug', 'Dawaaii.com', 'EasyMedico', 'Indi
 datasets: [
 {
     label: 'A+',
-    backgroundColor: 'rgba(0, 80, 0, 0.9)',
+    backgroundColor: 'rgba(0, 80, 0, 0.7)',
     hoverBackgroundColor: 'rgba(0, 80, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -244,7 +244,7 @@ datasets: [
 },
 {
     label: 'A',
-    backgroundColor: 'rgba(154, 205, 50, 0.9)',
+    backgroundColor: 'rgba(154, 205, 50, 0.7)',
     hoverBackgroundColor: 'rgba(154, 205, 50, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -252,7 +252,7 @@ datasets: [
 },
 {
     label: 'A-',
-    backgroundColor: 'rgba(144, 238, 144, 0.9)',
+    backgroundColor: 'rgba(144, 238, 144, 0.7)',
     hoverBackgroundColor: 'rgba(144, 238, 144, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -260,7 +260,7 @@ datasets: [
 },
 {
     label: 'B',
-    backgroundColor: 'rgba(255, 165, 0, 0.9)',
+    backgroundColor: 'rgba(255, 165, 0, 0.7)',
     hoverBackgroundColor: 'rgba(255, 165, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -268,7 +268,7 @@ datasets: [
 },
 {
     label: 'C',
-    backgroundColor: 'rgba(255, 165, 0, 0.9)',
+    backgroundColor: 'rgba(255, 165, 0, 0.7)',
     hoverBackgroundColor: 'rgba(255, 165, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -276,7 +276,7 @@ datasets: [
 },
 {
     label: 'D',
-    backgroundColor: 'rgba(255, 165, 0, 0.9)',
+    backgroundColor: 'rgba(255, 165, 0, 0.7)',
     hoverBackgroundColor: 'rgba(255, 165, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -284,7 +284,7 @@ datasets: [
 },
 {
     label: 'E',
-    backgroundColor: 'rgba(255, 165, 0, 0.9)',
+    backgroundColor: 'rgba(255, 165, 0, 0.7)',
     hoverBackgroundColor: 'rgba(255, 165, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -292,7 +292,7 @@ datasets: [
 },
 {
     label: 'T',
-    backgroundColor: 'rgba(255, 0, 0, 0.9)',
+    backgroundColor: 'rgba(255, 0, 0, 0.7)',
     hoverBackgroundColor: 'rgba(255, 0, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -300,7 +300,7 @@ datasets: [
 },
 {
     label: 'F',
-    backgroundColor: 'rgba(255, 0, 0, 0.9)',
+    backgroundColor: 'rgba(255, 0, 0, 0.7)',
     hoverBackgroundColor: 'rgba(255, 0, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -308,7 +308,7 @@ datasets: [
 },
 {
     label: 'No HTTPS',
-    backgroundColor: 'rgba(255, 0, 0, 0.9)',
+    backgroundColor: 'rgba(255, 0, 0, 0.7)',
     hoverBackgroundColor: 'rgba(255, 0, 0, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -316,7 +316,7 @@ datasets: [
 },
 {
     label: 'Scan error',
-    backgroundColor: 'rgba(128, 128, 128, 0.9)',
+    backgroundColor: 'rgba(128, 128, 128, 0.7)',
     hoverBackgroundColor: 'rgba(128, 128, 128, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
@@ -324,7 +324,7 @@ datasets: [
 },
 {
     label: 'Not scanned',
-    backgroundColor: 'rgba(128, 128, 128, 0.9)',
+    backgroundColor: 'rgba(128, 128, 128, 0.7)',
     hoverBackgroundColor: 'rgba(128, 128, 128, 1)',
     borderWidth: 1,
     borderColor: 'rgb(255, 255, 255)',
