@@ -92,7 +92,7 @@ var githubLabels = {
 	'[F] Only supports RC4 suites': '[F] RC4 only',
 	'[F] Supports Insecure renegotiation': '[F] Insecure Renegotiation',
 	'[F] No support for TLS': '[F] SSL only',
-	'[F] Supports insecure cipher suites', '[F] Insecure suites',
+	'[F] Supports insecure cipher suites': '[F] Insecure suites',
 	'[T] Untrusted certificate': '[T] Not trusted',
 	'[C] Vulnerable to POODLE (SSLv3)': '[C] POODLE (SSL)',
 	'[C] Lacks support for TLSv1.2': '[C] No TLS1.2',
