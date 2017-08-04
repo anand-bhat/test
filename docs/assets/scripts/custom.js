@@ -253,18 +253,12 @@ $(document).ready(function () {
 					var api = new $.fn.dataTable.Api(meta.settings);
 					var api1 = $('#httpsdata').DataTable();
 					for (var index = 11; index <= 36; index++) {
-						console.log(meta.row + ' ' + meta.col);
+						//console.log(meta.row + ' ' + meta.col);
 						if (row[index] === 'Yes') {
-							var title = table.column(meta.col).header();
-							body = body + '\n' + count + '. ' + $(title).html();
+							body = body + '\n' + count + '. ' + $(table.column(index).header()).html();
 							count = count + 1;
 						}
 					}
-					
-					console.log(table.column(5).header());
-					console.log($(table.column(5).header()).text());
-					
-					
 
 					//githubLabels;
 
