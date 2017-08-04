@@ -215,7 +215,8 @@ $(document).ready(function () {
 					var body = 'Organization: ' + row[1] + '\nType: ' + row[7] + '\n\nHost: ' + row[2];
 
 					if (row[8] !== '?') {
-						body = body + '\nFunction: ' + row[8];
+						body = body + '\nFunction: ' + row[8];'
+					}
 
 					body = body + '\n\nhttps://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on'
 					body = body + '\n\nGrade: ' + row[4] + '\n\nIssues:\n';
