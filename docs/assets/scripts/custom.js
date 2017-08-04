@@ -260,7 +260,7 @@ $(document).ready(function () {
 						}
 					}
 					
-					console.log(table.column(5));
+					console.log(table.column(5).index());
 					
 					
 
