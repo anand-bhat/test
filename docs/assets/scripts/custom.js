@@ -262,6 +262,7 @@ $(document).ready(function () {
 					}
 					
 					console.log(table.column(5).header());
+					console.log($(table.column(5).header()).text());
 					
 					
 
