@@ -288,13 +288,13 @@ $(document).ready(function () {
 
 					var labelsText = '';
 					for (index = 0; index < labels.length; index++) {
-						labelsText += '&labels[]=' + labels[index];
+						labelsText += '&labels[]=' + encodeURIComponent(labels[index]);
 					}
 
 					//githubMilestones;
 					var milestone = row[7];
 
-					var details = '?title=' + encodeURIComponent(title) + '&body=' + encodeURIComponent(body) + encodeURIComponent(labelsText) + '&milestone=' + encodeURIComponent(milestone);
+					var details = '?title=' + encodeURIComponent(title) + '&body=' + encodeURIComponent(body) + labelsText + '&milestone=' + encodeURIComponent(milestone);
 					return '<a href="https://github.com/anand-bhat/httpswatch/issues/new' + details + '" rel="noopener" target="_blank">Create</a>';
 				},
 				targets: 10
