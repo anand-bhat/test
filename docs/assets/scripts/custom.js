@@ -255,7 +255,7 @@ $(document).ready(function () {
 					for (var index = 11; index <= 36; index++) {
 						//console.log(meta.row + ' ' + meta.col);
 						if (row[index] === 'Yes') {
-							body = body + '\n' + count + '. ' + $(table.column(index).header()).html();
+							body = body + '\n' + count + '. ' + $(api.column(index).header()).html();
 							count = count + 1;
 						}
 					}
