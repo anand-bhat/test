@@ -38,7 +38,7 @@ Chart.pluginService.register({
 // Formatting function for row details
 function format(row) {
 	'use strict';
-	return '<table><tr><td>SSL Labs report: <a href="https://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on" rel="noopener" target="_blank">' + row[2] + '</a></td></tr></table>';
+	return '<table><tr><td>SSL Labs report: <a href="https://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on" rel="noopener nofollow" target="_blank">' + row[2] + '</a></td></tr></table>';
 }
 
 var gradeRank = {
@@ -194,7 +194,7 @@ $(document).ready(function () {
 					if (type !== 'display') {
 						return data;
 					}
-					return '<div class="grade ' + (gradeClass[data] || 'grade-red') + '"><a class="white" href="https://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on" rel="noopener" target="_blank">' + data + '</a></div>';
+					return '<div class="grade ' + (gradeClass[data] || 'grade-red') + '"><a class="white" href="https://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on" rel="noopener nofollow" target="_blank">' + data + '</a></div>';
 				},
 				targets: 4
 			},
@@ -212,7 +212,24 @@ $(document).ready(function () {
 					if ($.inArray(row[4], gradesNotRequiringReport) !== -1) {
 						return data;
 					}
-					return '<a href="https://github.com/anand-bhat/httpswatch/issues/new" rel="noopener" target="_blank">Create</a>';
+					var body = 'Organization: ' + row[1] + '\nType: ' + row[7] + '\n\nHost: ' + row[2];
+
+					if (row[8] !== '?') {
+						body = body + '\nFunction: ' + row[8];
+
+					body = body + '\n\nhttps://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on'
+					body = body + '\n\nGrade: ' + row[4] + '\n\nIssues:\n';
+
+					var count = 1;
+					for (var index = 11; index <= 36; index++) {
+						if (row[index] !== 'Yes') {
+							body = body + '\n' + count + '. ' + this.api().column(index).title + '\n';
+							count = count + 1;
+						}
+					}
+
+					var details = '?title=' + row[2] + '&body=' + body + '&labels[]=F&labels[]=C' + '&milestone=' + row[7];
+					return '<a href="https://github.com/anand-bhat/httpswatch/issues/new' + details + '" rel="noopener" target="_blank">Create</a>';
 				},
 				targets: 10
 			},
