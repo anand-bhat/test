@@ -253,12 +253,16 @@ $(document).ready(function () {
 					var api = new $.fn.dataTable.Api(meta.settings);
 					var api1 = $('#httpsdata').DataTable();
 					for (var index = 11; index <= 36; index++) {
-						//console.log(row[index]);
+						console.log(meta.row + ' ' + meta.col);
 						if (row[index] === 'Yes') {
 							body = body + '\n' + count + '. ' + api1.column(index).data();
 							count = count + 1;
 						}
 					}
+					
+					console.log(table.column(5).title);
+					
+					
 
 					//githubLabels;
 
