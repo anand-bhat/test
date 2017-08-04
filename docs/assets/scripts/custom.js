@@ -79,17 +79,32 @@ var gradeClass = {
 };
 
 var githubLabels = {
-	'A+': 'grade-green',
-	'A': 'grade-yellowgreen',
-	'A-': 'grade-lightgreen',
-	'B': 'grade-orange',
-	'C': 'grade-orange',
-	'D': 'grade-orange',
-	'E': 'grade-orange',
-	'Scan error': 'grade-gray',
-	'Could not connect': 'grade-gray',
-	'Not scanned': 'grade-gray',
-	'Unknown domain': 'grade-gray'
+	'[F] Vulnerable to Heartbleed': '[F] Heartbleed',
+	'[F] Vulnerable to CVE-2014-0224': '[F] CVE-2014-0224',
+	'[F] Vulnerable to CVE-2016-2107': '[F] CVE-2016-2107',
+	'[F] Vulnerable to FREAK': '[F] FREAK',
+	'[F] Vulnerable to Logjam': '[F] Logjam',
+	'[F] Vulnerable to POODLE (TLS)': '[F] POODLE (TLS)',
+	'[F] Vulnerable to DROWN': '[F] DROWN',
+	'[F] Vulnerable to Ticketbleed': '[F] Ticketbleed',
+	'[F] Supports SSLv2': '[F] SSLv2',
+	'[F] Supports Anonymous suites': '[F] Anon suites',
+	'[F] Only supports RC4 suites': '[F] RC4 only',
+	'[F] Supports Insecure renegotiation': '[F] Insecure Renegotiation',
+	'[F] No support for TLS': '[F] SSL only',
+	'[F] Supports insecure cipher suites', '[F] Insecure suites',
+	'[T] Untrusted certificate': '[T] Not trusted',
+	'[C] Vulnerable to POODLE (SSLv3)': '[C] POODLE (SSL)',
+	'[C] Lacks support for TLSv1.2': '[C] No TLS1.2',
+	'[C] Uses RC4 with modern protocols': '[C] RC4 with modern',
+	'[C] Uses 3DES with modern protocols': '[C] Short block cipher with modern',
+	'[B] Supports RC4': '[B] RC4',
+	'[B] Supports SSLv3': '[B] SSLv3',
+	'[B] Uses weak DH': '[B] Weak DH',
+	'[B] Has incomplete chain': '[B] Incomplete chain',
+	'[B] Has weak private key': '[B] Weak private key',
+	'[A-] Lacks Forward Secrecy': '[A-] No FS',
+	'[A-] Lacks Secure Renegotiation': '[A-] No Secure Renegotiation'
 };
 
 var githubMilestones = {
@@ -240,8 +255,9 @@ $(document).ready(function () {
 					if ($.inArray(row[4], gradesNotRequiringReport) !== -1) {
 						return data;
 					}
-					var body = 'Organization: ' + row[1] + '\nType: ' + row[7] + '\n\nHost: ' + row[2];
 
+					var title = row[2];
+					var body = 'Organization: ' + row[1] + '\nType: ' + row[7] + '\n\nHost: ' + row[2];
 					if (row[8] !== '?') {
 						body = body + '\nFunction: ' + row[8];
 					}
@@ -251,20 +267,34 @@ $(document).ready(function () {
 
 					var count = 1;
 					var api = new $.fn.dataTable.Api(meta.settings);
-					var api1 = $('#httpsdata').DataTable();
+					var labels = [];
 					for (var index = 11; index <= 36; index++) {
-						//console.log(meta.row + ' ' + meta.col);
 						if (row[index] === 'Yes') {
-							body = body + '\n' + count + '. ' + $(api.column(index).header()).html();
+							var issue = $(api.column(index).header()).html();
+							body = body + '\n' + count + '. ' + issue;
 							count = count + 1;
+							labels.push(githubLabels[issue]);
 						}
 					}
 
-					//githubLabels;
+					// Add grade to label
+					if (row[4].startsWith('T')) {
+						labels.push('T');
+					} else {
+						labels.push(row[4]);
+					}
+
+					// TODO: Add org to label
+
+					var labelsText = '';
+					for (index = 0; index < labels.length; index++) {
+						labelsText += '&labels[]=' + labels[index];
+					}
 
 					//githubMilestones;
+					var milestone = row[7];
 
-					var details = '?title=' + encodeURIComponent(row[2]) + '&body=' + encodeURIComponent(body) + '&labels[]=F&labels[]=C' + '&milestone=' + encodeURIComponent(row[7]);
+					var details = '?title=' + encodeURIComponent(title) + '&body=' + encodeURIComponent(body) + encodeURIComponent(labelsText) + '&milestone=' + encodeURIComponent(milestone);
 					return '<a href="https://github.com/anand-bhat/httpswatch/issues/new' + details + '" rel="noopener" target="_blank">Create</a>';
 				},
 				targets: 10
