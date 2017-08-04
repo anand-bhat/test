@@ -222,9 +222,10 @@ $(document).ready(function () {
 					body = body + '\n\nGrade: ' + row[4] + '\n\nIssues:\n';
 
 					var count = 1;
+					var api = new $.fn.dataTable.Api(meta.settings);
 					for (var index = 11; index <= 36; index++) {
 						if (row[index] !== 'Yes') {
-							body = body + '\n' + count + '. ' + this.api().column(index).title + '\n';
+							body = body + '\n' + count + '. ' + api.column(index).title + '\n';
 							count = count + 1;
 						}
 					}
