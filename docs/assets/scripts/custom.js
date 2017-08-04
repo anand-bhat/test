@@ -254,8 +254,13 @@ $(document).ready(function () {
 					for (var index = 11; index <= 36; index++) {
 						//console.log(row[index]);
 						if (row[index] === 'Yes') {
-							body = body + '\n' + count + '. ' + api.column(index).title();
+							body = body + '\n' + count + '. ' + api.column(index);
 							count = count + 1;
+							var output = '';
+for (var property in api.column(index)) {
+  output += property + ': ' + api.column(index)[property]+'; ';
+}
+console.log(output);
 						}
 					}
 
