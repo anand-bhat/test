@@ -230,8 +230,8 @@ $(document).ready(function () {
 						}
 					}
 
-					var details = '?title=' + row[2] + '&body=' + body + '&labels[]=F&labels[]=C' + '&milestone=' + row[7];
-					return '<a href="https://github.com/anand-bhat/httpswatch/issues/new' + encodeURIComponent(details) + '" rel="noopener" target="_blank">Create</a>';
+					var details = '?title=' + encodeURIComponent(row[2]) + '&body=' + encodeURIComponent(body) + '&labels[]=F&labels[]=C' + '&milestone=' + encodeURIComponent(row[7]);
+					return '<a href="https://github.com/anand-bhat/httpswatch/issues/new' + details + '" rel="noopener" target="_blank">Create</a>';
 				},
 				targets: 10
 			},
