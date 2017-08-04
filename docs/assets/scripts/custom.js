@@ -255,12 +255,13 @@ $(document).ready(function () {
 					for (var index = 11; index <= 36; index++) {
 						console.log(meta.row + ' ' + meta.col);
 						if (row[index] === 'Yes') {
-							body = body + '\n' + count + '. ' + api1.column(index).data();
+							var title = table.column(meta.col).header();
+							body = body + '\n' + count + '. ' + $(title).html();
 							count = count + 1;
 						}
 					}
 					
-					console.log(table.column(5).index());
+					console.log(table.column(5).header());
 					
 					
 
