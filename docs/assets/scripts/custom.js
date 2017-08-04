@@ -224,8 +224,9 @@ $(document).ready(function () {
 					var count = 1;
 					var api = new $.fn.dataTable.Api(meta.settings);
 					for (var index = 11; index <= 36; index++) {
+						console.log(row[index]);
 						if (row[index] !== 'Yes') {
-							body = body + '\n' + count + '. ' + api.column(index).title + '\n';
+							body = body + '\n' + count + '. ' + api.column(index).title;
 							count = count + 1;
 						}
 					}
