@@ -78,6 +78,34 @@ var gradeClass = {
 	'Unknown domain': 'grade-gray'
 };
 
+var githubLabels = {
+	'A+': 'grade-green',
+	'A': 'grade-yellowgreen',
+	'A-': 'grade-lightgreen',
+	'B': 'grade-orange',
+	'C': 'grade-orange',
+	'D': 'grade-orange',
+	'E': 'grade-orange',
+	'Scan error': 'grade-gray',
+	'Could not connect': 'grade-gray',
+	'Not scanned': 'grade-gray',
+	'Unknown domain': 'grade-gray'
+};
+
+var githubMilestones = {
+	'A+': 'grade-green',
+	'A': 'grade-yellowgreen',
+	'A-': 'grade-lightgreen',
+	'B': 'grade-orange',
+	'C': 'grade-orange',
+	'D': 'grade-orange',
+	'E': 'grade-orange',
+	'Scan error': 'grade-gray',
+	'Could not connect': 'grade-gray',
+	'Not scanned': 'grade-gray',
+	'Unknown domain': 'grade-gray'
+};
+
 var gradesNotRequiringReport = ['A', 'A-', 'A+', 'Could not connect', 'Scan error', 'Not scanned', 'Unknown domain'];
 
 function drawChartCountsByOrgAndGrade() {
@@ -219,17 +247,21 @@ $(document).ready(function () {
 					}
 
 					body = body + '\n\nhttps://www.ssllabs.com/ssltest/analyze.html?d=' + row[2] + '&ignoreMismatch=on'
-					body = body + '\n\nGrade: ' + row[4] + '\n\nIssues:\n';
+					body = body + '\n\nGrade: ' + row[4] + '\n\nIssues:';
 
 					var count = 1;
 					var api = new $.fn.dataTable.Api(meta.settings);
 					for (var index = 11; index <= 36; index++) {
-						console.log(row[index]);
-						if (row[index] !== 'Yes') {
+						alert(row[index]);
+						if (row[index] === 'No') {
 							body = body + '\n' + count + '. ' + api.column(index).title;
 							count = count + 1;
 						}
 					}
+
+					//githubLabels;
+
+					//githubMilestones;
 
 					var details = '?title=' + encodeURIComponent(row[2]) + '&body=' + encodeURIComponent(body) + '&labels[]=F&labels[]=C' + '&milestone=' + encodeURIComponent(row[7]);
 					return '<a href="https://github.com/anand-bhat/httpswatch/issues/new' + details + '" rel="noopener" target="_blank">Create</a>';
