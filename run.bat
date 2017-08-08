@@ -1,10 +1,10 @@
-::CALL httpswatch -scangroup=NSDL
+CALL httpswatch -scangroup=NSDL
 @ECHO ---------------------------------------------
-::CALL httpswatch -scangroup=IndianIncomeTaxFilingServices -createhostsfile=true
+CALL httpswatch -scangroup=IndianIncomeTaxFilingServices -createhostsfile=true
 @ECHO ---------------------------------------------
-::CALL httpswatch -scangroup=IndianPharmacies -createhostsfile=true
+CALL httpswatch -scangroup=IndianPharmacies -createhostsfile=true
 @ECHO ---------------------------------------------
-::CALL httpswatch -scangroup=IndianBanksPublicSector -createhostsfile=true
+CALL httpswatch -scangroup=IndianBanksPublicSector -createhostsfile=true
 @ECHO ---------------------------------------------
 CALL httpswatch -scangroup=IndianBanksPrivateSector -createhostsfile=true
 @ECHO ---------------------------------------------
