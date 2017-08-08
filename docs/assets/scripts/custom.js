@@ -284,7 +284,8 @@ $(document).ready(function () {
 						labels.push(row[4]);
 					}
 
-					// TODO: Add org to label
+					// Add org
+					labels.push('[' + row[1] + '] ' + row[2]);
 
 					var labelsText = '';
 					for (index = 0; index < labels.length; index++) {
