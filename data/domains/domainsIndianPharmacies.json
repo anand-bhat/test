@@ -537,6 +537,9 @@
           "httpsBehavior": "HTTP only"
         },
         {
+          "host": "jenkins.pharmeasy.in"
+        },
+        {
           "host": "share.pharmeasy.in",
           "httpsBehavior": "HTTP only"
         },
