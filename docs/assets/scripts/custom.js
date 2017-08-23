@@ -107,20 +107,6 @@ var githubLabels = {
 	'[A-] Lacks Secure Renegotiation': '[A-] No Secure Renegotiation'
 };
 
-var githubMilestones = {
-	'A+': 'grade-green',
-	'A': 'grade-yellowgreen',
-	'A-': 'grade-lightgreen',
-	'B': 'grade-orange',
-	'C': 'grade-orange',
-	'D': 'grade-orange',
-	'E': 'grade-orange',
-	'Scan error': 'grade-gray',
-	'Could not connect': 'grade-gray',
-	'Not scanned': 'grade-gray',
-	'Unknown domain': 'grade-gray'
-};
-
 var gradesNotRequiringReport = ['A', 'A-', 'A+', 'Could not connect', 'Scan error', 'Not scanned', 'Unknown domain'];
 
 function drawChartCountsByOrgAndGrade() {
@@ -285,7 +271,7 @@ $(document).ready(function () {
 					}
 
 					// Add org
-					labels.push('[' + row[1] + '] ' + row[2]);
+					labels.push('[' + row[7] + '] ' + row[1]);
 
 					var labelsText = '';
 					for (index = 0; index < labels.length; index++) {
