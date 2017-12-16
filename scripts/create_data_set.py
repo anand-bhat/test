@@ -86,7 +86,7 @@ def main(argv):
                                issue_report, '-', '-', '-', '-', '-', '-', '-',
                                '-', '-', '-', '-', '-', '-', '-', '-', '-',
                                '-', '-', '-', '-', '-', '-', '-', '-', '-',
-                               '-']
+                               '-', '-']
             print(data_set_values, ',')
 
             # Update chart data
@@ -174,6 +174,11 @@ def main(argv):
             ticketbleed = value_if_graded(
                 grade, ticketbleed_value(
                     endpoint['details'].get('ticketbleed', '-')))
+
+            # Determine if site is vulnerable to ROBOT
+            robot = value_if_graded(
+                grade, robot_value(
+                    endpoint['details'].get('bleichenbacher', '-')))
 
             # Determine if site supports insecure renegotiation
             insecure_renegotiation = value_if_graded(
@@ -309,7 +314,7 @@ def main(argv):
                                https_behavior, issue_report, heartbleed,
                                openssl_ccs, openssl_lucky_minus20, freak,
                                logjam, poodle_tls, drown_vulnerable,
-                               ticketbleed, sslv2, supports_anon_suites,
+                               ticketbleed, robot, sslv2, supports_anon_suites,
                                rc4_only, insecure_renegotiation, notls,
                                weak_ciphers, trust_issues, poodle, notlsv12,
                                rc4_with_modern, sweet32, supports_rc4, sslv3,
@@ -344,7 +349,7 @@ def main(argv):
                                https_behavior, issue_report, '-', '-', '-',
                                '-', '-', '-', '-', '-', '-', '-', '-', '-',
                                '-', '-', '-', '-', '-', '-', '-', '-', '-',
-                               '-', '-', '-', '-', '-']
+                               '-', '-', '-', '-', '-', '-']
             print(data_set_values, ',')
 
             # Update chart data
@@ -436,6 +441,17 @@ def openssl_lucky_minus20_value(value):
 
 def ticketbleed_value(value):
     """Value for Ticketbleed bug."""
+    switcher = {
+        -1: 'Test failure',
+        0: 'Unknown',
+        1: 'No',
+        2: 'Yes'
+    }
+    return switcher.get(value, '-')
+
+
+def robot_value(value):
+    """Value for ROBOT bug."""
     switcher = {
         -1: 'Test failure',
         0: 'Unknown',
