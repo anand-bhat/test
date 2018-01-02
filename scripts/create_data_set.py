@@ -456,7 +456,9 @@ def robot_value(value):
         -1: 'Test failure',
         0: 'Unknown',
         1: 'No',
-        2: 'Yes'
+        2: 'Yes',
+        3: 'Yes',
+        4: 'Inconsistent result'
     }
     return switcher.get(value, '-')
 
