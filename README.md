@@ -17,7 +17,7 @@ The code (and content) for the site rests within the `/docs` folder.
 | Bootstrap | 4.0.0 Beta 2 | https://getbootstrap.com |
 | jQuery DataTables | 1.10.16 | https://datatables.net |
 | FixedHeader extension for jQuery DataTables | 3.1.3 | https://datatables.net/extensions/fixedheader/ |
-| Chart.js | 2.7.1 | http://www.chartjs.org/ |
+| Chart.js | 2.6.0 | http://www.chartjs.org/ |
 
 ## Components used for backend scripts
 
