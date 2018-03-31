@@ -8,7 +8,8 @@
         {
           "host": "netmeds.com",
           "hostPurpose": "Home page",
-          "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS downgraded to HTTP"
+          "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS downgraded to HTTP",
+          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/164"
         },
         {
           "host": "www.netmeds.com",
@@ -175,10 +176,11 @@
         {
           "host": "blog.medplusmart.com",
           "hostPurpose": "Blog",
-          "httpsBehavior": "HTTP only"
+          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/162"
         },
         {
-          "host": "mail.medplusmart.com"
+          "host": "mail.medplusmart.com",
+          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/163"
         },
         {
           "host": "static1.medplusmart.com",

@@ -104,7 +104,7 @@ var githubLabels = {
 	'[B] Uses weak DH': '[B] Weak DH',
 	'[B] Has incomplete chain': '[B] Incomplete chain',
 	'[B] Has weak private key': '[B] Weak private key',
-	'[A-] Lacks Forward Secrecy': '[A-] No FS',
+	'[B] Lacks Forward Secrecy': '[B] No FS',
 	'[A-] Lacks Secure Renegotiation': '[A-] No Secure Renegotiation'
 };
 
@@ -215,7 +215,7 @@ $(document).ready(function () {
 			{title: '[B] Uses weak DH', className: 'center'},
 			{title: '[B] Has incomplete chain', className: 'center'},
 			{title: '[B] Has weak private key', className: 'center'},
-			{title: '[A-] Lacks Forward Secrecy', className: 'center'},
+			{title: '[B] Lacks Forward Secrecy', className: 'center'},
 			{title: '[A-] Lacks Secure Renegotiation', className: 'center'}
 		],
 		columnDefs: [
