@@ -1,0 +1,13 @@
+{
+  "industry": "Government",
+  "organizations": [
+    {
+      "organization": "Australia",
+      "hosts": [
+        {
+          "host": "*"
+        }
+      ]
+    }
+  ]
+}
