@@ -22,6 +22,7 @@ Chart.pluginService.register({
 	beforeUpdate: function(chartInstance, pluginOptions) {
 		var datasets = chartInstance.data.datasets;
 		var allData = datasets.map(function(dataset) { return dataset.data; });
+		alert(chartInstance.data.originalData);
 		chartInstance.data.originalData = datasets.map(function(dataset) {
 			srcAry = dataset.data;
 			var dstAry = [];
@@ -29,7 +30,7 @@ Chart.pluginService.register({
 
 			for (var i = 0; i < length; i++) {
 				dstAry.push(srcAry[i]);
-				alert(srcAry[i]);
+				//alert(srcAry[i]);
 			}
 			return dstAry;
 		});
