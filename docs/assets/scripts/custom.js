@@ -21,7 +21,7 @@ Chart.pluginService.register({
 
 	beforeUpdate: function(chartInstance, pluginOptions) {
 		var datasets = chartInstance.data.datasets;
-		var allData = datasets.map(function(dataset) { return dataset.data; });
+		var allData = datasets.map(function(dataset) { return Array.from(dataset.data); });
 		chartInstance.data.originalData = allData;
 
 		var totals = Array.apply(null, new Array(allData[0].length)).map(function(el, i) {
