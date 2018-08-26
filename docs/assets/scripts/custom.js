@@ -22,7 +22,7 @@ Chart.pluginService.register({
 	beforeUpdate: function(chartInstance, pluginOptions) {
 		var datasets = chartInstance.data.datasets;
 		var allData = datasets.map(function(dataset) { return dataset.data; });
-		alert(chartInstance.data.originalData);
+		alert((typeof chartInstance.data.originalData  === 'undefined') ? "undefined" : "not");
 		chartInstance.data.originalData = datasets.map(function(dataset) {
 			srcAry = dataset.data;
 			var dstAry = [];
