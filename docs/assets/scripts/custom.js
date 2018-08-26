@@ -23,17 +23,7 @@ Chart.pluginService.register({
 		var datasets = chartInstance.data.datasets;
 		var allData = datasets.map(function(dataset) { return dataset.data; });
 		if (typeof chartInstance.data.originalData  === 'undefined') {
-		chartInstance.data.originalData = datasets.map(function(dataset) {
-			srcAry = dataset.data;
-			var dstAry = [];
-			var length = srcAry.length;
-
-			for (var i = 0; i < length; i++) {
-				dstAry.push(srcAry[i]);
-				//alert(srcAry[i]);
-			}
-			return dstAry;
-		});
+			chartInstance.data.originalData = allData;
 		}
 
 		var totals = Array.apply(null, new Array(allData[0].length)).map(function(el, i) {
