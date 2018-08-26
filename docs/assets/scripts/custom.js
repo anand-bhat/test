@@ -29,6 +29,7 @@ Chart.pluginService.register({
 
 			for (var i = 0; i < length; i++) {
 				dstAry.push(srcAry[i]);
+				alert(srcAry[i]);
 			}
 			return dstAry;
 		});
