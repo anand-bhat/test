@@ -168,8 +168,7 @@ $(document).ready(function () {
 			'copyHtml5',
 			'excelHtml5',
 			'csvHtml5',
-			'pdfHtml5',
-			'print'
+			'pdfHtml5'
 		],
 		search: {
 			search: (function () {
