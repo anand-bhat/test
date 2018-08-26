@@ -22,7 +22,7 @@ Chart.pluginService.register({
 	beforeUpdate: function(chartInstance, pluginOptions) {
 		var datasets = chartInstance.data.datasets;
 		var allData = datasets.map(function(dataset) { return dataset.data; });
-		alert((typeof chartInstance.data.originalData  === 'undefined') ? "undefined" : "not");
+		if (typeof chartInstance.data.originalData  === 'undefined') {
 		chartInstance.data.originalData = datasets.map(function(dataset) {
 			srcAry = dataset.data;
 			var dstAry = [];
@@ -34,6 +34,7 @@ Chart.pluginService.register({
 			}
 			return dstAry;
 		});
+		}
 
 		var totals = Array.apply(null, new Array(allData[0].length)).map(function(el, i) {
 			return allData.reduce(function(sum, data) { return sum + data[i]; }, 0);
