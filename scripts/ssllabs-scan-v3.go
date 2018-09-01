@@ -121,7 +121,7 @@ type LabsCaaPolicy struct {
 }
 
 type LabsCert struct {
-	Id                     int
+	Id                     string
 	Subject                string
 	CommonNames            []string
 	AltNames               []string
@@ -376,7 +376,8 @@ type LabsEndpointDetails struct {
 	Heartbeat                      bool
 	OpenSslCcs                     int
 	OpenSSLLuckyMinus20            int
-	Ticketbleed                    int		
+	Ticketbleed                    int
+	Bleichenbacher                 int
 	Poodle                         bool
 	PoodleTLS                      int
 	FallbackScsv                   bool
@@ -429,7 +430,7 @@ type LabsReport struct {
 	CacheExpiryTime int64
 	CertHostnames   []string
 	Endpoints       []LabsEndpoint
-	Cert            []LabsCert
+	Certs           []LabsCert
 	rawJSON         string
 }
 
