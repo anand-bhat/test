@@ -165,8 +165,8 @@ $(document).ready(function () {
 	var table = $('#httpsdata').DataTable({
 		dom: 'Bfrtip',
 		buttons: [
-			'copyHtml5',
 			'pageLength',
+			'copyHtml5',
 			'excelHtml5',
 			'csvHtml5'
 		],
