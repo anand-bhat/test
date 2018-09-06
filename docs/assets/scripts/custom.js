@@ -163,7 +163,7 @@ jQuery.extend(jQuery.fn.dataTableExt.oSort, {
 $(document).ready(function () {
 	'use strict';
 	var table = $('#httpsdata').DataTable({
-		dom: 'Bfrtip',
+		dom: 'lBfrtip',
 		buttons: [
 			'copyHtml5',
 			'excelHtml5',
