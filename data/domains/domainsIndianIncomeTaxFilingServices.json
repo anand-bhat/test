@@ -132,16 +132,6 @@
           "issueReport": "https://github.com/anand-bhat/httpswatch/issues/56"
         },
         {
-          "host": "blog.hrblock.in",
-          "hostPurpose": "Blog",
-          "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS version has mixed content",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/57"
-        },
-        {
-          "host": "o1.em.hrblock.in",
-          "httpsBehavior": "Unable to connect over HTTP and HTTPS"
-        },
-        {
           "host": "myblock.hrblock.in",
           "hostPurpose": "Login",
           "httpsBehavior": "HTTP redirected to HTTPS",
@@ -162,24 +152,6 @@
         },
         {
           "host": "tech.hrblock.in"
-        }
-      ]
-    },
-    {
-      "organization": "HamaraTax",
-      "lastScanForSubdomains": "2017-05-31",
-      "domains": ["hamaratax.com"],
-      "hosts": [
-        {
-          "host": "hamaratax.com",
-          "hostPurpose": "Home page",
-          "httpsBehavior": "HTTP redirected to HTTPS",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/54"
-        },
-        {
-          "host": "www.hamaratax.com",
-          "hostPurpose": "Home page",
-          "httpsBehavior": "HTTP redirected to HTTPS"
         }
       ]
     },
@@ -474,10 +446,6 @@
         {
           "host": "support.taxspanner.com",
           "httpsBehavior": "Unable to connect over HTTP and HTTPS"
-        },
-        {
-          "host": "testcms.taxspanner.com",
-          "httpsBehavior": "Unable to connect over HTTP and HTTPS"
         }
       ]
     },
@@ -619,49 +587,13 @@
           "issueReport": "https://github.com/anand-bhat/httpswatch/issues/51"
         },
         {
-          "host": "auth.myitreturn.com",
-          "httpsBehavior": "HTTP only"
-        },
-        {
-          "host": "www.auth.myitreturn.com",
-          "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS works"
-        },
-        {
-          "host": "blog.myitreturn.com",
-          "hostPurpose": "Blog",
-          "httpsBehavior": "HTTP only"
-        },
-        {
-          "host": "www.blog.myitreturn.com",
-          "hostPurpose": "Blog (supposed to be)",
-          "httpsBehavior": "HTTP redirected to https://myitreturn.com (Production); HTTPS does not show same content as blog.myitreturn.com"
-        },
-        {
           "host": "chat.myitreturn.com",
           "hostPurpose": "Chat",
           "httpsBehavior": "HTTP only"
         },
         {
-          "host": "www.chat.myitreturn.com",
-          "httpsBehavior": "HTTP redirected to https://myitreturn.com (Production); HTTPS does not show same content as chat.myitreturn.com"
-        },
-        {
-          "host": "devlive.myitreturn.com",
-          "hostPurpose": "Testing environment",
-          "httpsBehavior": "HTTP only"
-        },
-        {
-          "host": "www.devlive.myitreturn.com",
-          "hostPurpose": "Testing environment",
-          "httpsBehavior": "HTTP redirected to https://myitreturn.com (Production); HTTPS works"
-        },
-        {
           "host": "downloads.myitreturn.com",
           "httpsBehavior": "HTTP only"
-        },
-        {
-          "host": "www.downloads.myitreturn.com",
-          "httpsBehavior": "HTTP redirected to https://myitreturn.com (Production); HTTPS works"
         },
         {
           "host": "help.myitreturn.com",
@@ -669,43 +601,13 @@
           "httpsBehavior": "HTTP redirected to HTTPS"
         },
         {
-          "host": "www.help.myitreturn.com",
-          "hostPurpose": "Support (supposed to be)",
-          "httpsBehavior": "HTTP redirected to https://myitreturn.com (Production); HTTPS does not show same content as help.myitreturn.com"
-        },
-        {
           "host": "m.myitreturn.com",
           "httpsBehavior": "HTTP only"
-        },
-        {
-          "host": "www.m.myitreturn.com",
-          "httpsBehavior": "HTTP redirected to https://myitreturn.com (Production); HTTPS works"
-        },
-        {
-          "host": "skorydov.myitreturn.com"
-        },
-        {
-          "host": "www.skorydov.myitreturn.com"
         },
         {
           "host": "uat.myitreturn.com",
           "hostPurpose": "Testing environment",
           "httpsBehavior": "HTTP only"
-        },
-        {
-          "host": "www.uat.myitreturn.com",
-          "hostPurpose": "Testing environment",
-          "httpsBehavior": "HTTP redirected to https://myitreturn.com (Production); HTTPS works"
-        },
-        {
-          "host": "uatui.myitreturn.com",
-          "hostPurpose": "Testing environment",
-          "httpsBehavior": "HTTP only"
-        },
-        {
-          "host": "www.uatui.myitreturn.com",
-          "hostPurpose": "Testing environment",
-          "httpsBehavior": "HTTP redirected to https://myitreturn.com (Production); HTTPS works"
         }
       ]
     }

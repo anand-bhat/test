@@ -40,11 +40,6 @@
           "issueReport": "https://github.com/anand-bhat/httpswatch/issues/113"
         },
         {
-          "host": "dev-api.netmeds.com",
-          "hostPurpose": "API (Non production)",
-          "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS works"
-        },
-        {
           "host": "enewsletter.netmeds.com",
           "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS works",
           "issueReport": "https://github.com/anand-bhat/httpswatch/issues/115"
@@ -82,22 +77,6 @@
       ]
     },
     {
-      "organization": "Medidart",
-      "lastScanForSubdomains": "2017-05-31",
-      "hosts": [
-        {
-          "host": "medidart.com",
-          "hostPurpose": "Home page",
-          "httpsBehavior": "HTTPS only"
-        },
-        {
-          "host": "www.medidart.com",
-          "hostPurpose": "Home page",
-          "httpsBehavior": "HTTPS only"
-        }
-      ]
-    },
-    {
       "organization": "Apollo Pharmacy",
       "lastScanForSubdomains": "2017-05-31",
       "hosts": [
@@ -118,42 +97,6 @@
           "hostPurpose": "Mail",
           "httpsBehavior": "HTTP only",
           "issueReport": "https://github.com/anand-bhat/httpswatch/issues/158"
-        }
-      ]
-    },
-    {
-      "organization": "Buydrug",
-      "lastScanForSubdomains": "2017-05-31",
-      "hosts": [
-        {
-          "host": "buydrug.in",
-          "hostPurpose": "Home page",
-          "httpsBehavior": "HTTP redirected to HTTPS",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/70"
-        },
-        {
-          "host": "www.buydrug.in",
-          "hostPurpose": "Home page",
-          "httpsBehavior": "HTTP redirected to HTTPS",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/69"
-        },
-        {
-          "host": "ns1.buydrug.in",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/159"
-        },
-        {
-          "host": "ns2.buydrug.in",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/160"
-        },
-        {
-          "host": "vps.buydrug.in",
-          "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS does not show same content as HTTP",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/71"
-        },
-        {
-          "host": "www.vps.buydrug.in",
-          "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS does not show same content as HTTP",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/72"
         }
       ]
     },
@@ -246,11 +189,6 @@
         {
           "host": "email.newsletter.1mg.com",
           "httpsBehavior": "HTTP only"
-        },
-        {
-          "host": "emaila.1mg.com",
-          "httpsBehavior": "Unable to connect over HTTP and HTTPS",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/93"
         },
         {
           "host": "img.1mg.com",
@@ -359,6 +297,16 @@
           "hostPurpose": "Home page",
           "httpsBehavior": "HTTP redirected to HTTPS",
           "issueReport": "https://github.com/anand-bhat/httpswatch/issues/75"
+        },
+        {
+          "host": "www.medikart.com",
+          "hostPurpose": "Home page",
+          "httpsBehavior": "HTTP redirected to HTTPS"
+        },
+        {
+          "host": "medikart.com",
+          "hostPurpose": "Home page",
+          "httpsBehavior": "HTTP redirected to HTTPS"
         }
       ]
     },
@@ -380,24 +328,6 @@
           "host": "mail.ritecure.com",
           "hostPurpose": "Home page",
           "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS does not show same content as HTTP"
-        }
-      ]
-    },
-    {
-      "organization": "Practo",
-      "lastScanForSubdomains": "2017-05-31",
-      "hosts": [
-        {
-          "host": "practo-order.com",
-          "hostPurpose": "Home page",
-          "httpsBehavior": "HTTP redirected to HTTPS",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/73"
-        },
-        {
-          "host": "www.practo-order.com",
-          "hostPurpose": "Home page",
-          "httpsBehavior": "HTTP redirected to HTTPS",
-          "issueReport": "https://github.com/anand-bhat/httpswatch/issues/74"
         }
       ]
     },
@@ -516,16 +446,6 @@
           "host": "www.medideal.in",
           "hostPurpose": "Home page",
           "httpsBehavior": "HTTP redirected to HTTPS"
-        },
-        {
-          "host": "blog.medideal.in",
-          "hostPurpose": "Blog",
-          "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS does not show same content as HTTP"
-        },
-        {
-          "host": "www.blog.medideal.in",
-          "hostPurpose": "Blog",
-          "httpsBehavior": "HTTP does not redirect to HTTPS; HTTPS does not show same content as HTTP"
         }
       ]
     },
